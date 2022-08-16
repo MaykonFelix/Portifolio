@@ -1,10 +1,28 @@
 body {
-    min-height: 100vh;
-    background: #212534;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    box-sizing: border-box;
-  }
+  font-family: 'Special Elite', cursive;
+  color: #fff;
+  min-height: 100vh;
+  background: #212534;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 15rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  cursor: pointer;
+  padding: 0;
+  margin: .2rem;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+h2:hover {
+  color: red;
+}
