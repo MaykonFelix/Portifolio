@@ -42,11 +42,10 @@ aside {
 
 footer {
   display: flex;
-  align-items: center !important;
   justify-items: center;
   grid-area: footer;
   /*box-shadow: 0px -5px 10px rgb(0, 0, 0, 0.5);*/
-  border-top: .1px solid gray;
+  border-top: .1px solid 	#C0C0C0;
 }
 
 footer p {
