@@ -1,6 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+
 }
 
 body {
@@ -40,46 +42,35 @@ aside {
 
 footer {
   display: flex;
-  align-items: center;
+  align-items: center !important;
   justify-items: center;
   grid-area: footer;
-  box-shadow: 0px -5px 10px rgb(0, 0, 0, 0.5);
+  /*box-shadow: 0px -5px 10px rgb(0, 0, 0, 0.5);*/
+  border-top: .1px solid gray;
 }
 
 footer p {
   width: 10rem;
 }
 
-footer img {
-  margin: 10px;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  border: 2px solid rgb(199, 93, 93, 0.8);
-  transition: 1s;
- 
-}
-
-footer img:hover {
-  width: 70px;
-  height: 70px;
-  border-radius: 100%;
-  border: 2px solid rgb(199, 93, 93, 0.8);
-  cursor: pointer;
-}
 
 .box {
-  background-color: rebeccapurple;
+  border: 3px solid rgb(255, 0, 0);
   border-radius: 8px;
   width: 70px;
   height: 70px;
+  transition: 1s;
+  
 }
-
 .box:hover {
+  border: 2px solid rgb(76, 0, 255);
+  border-radius: 100%;
   animation-name: rotate;
   animation-duration: .5s;
   animation-direction: reverse;
+  cursor: grab;
 }
+
 
 @keyframes rotate {
   0% {
