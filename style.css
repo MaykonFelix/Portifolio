@@ -1,28 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   font-family: 'Special Elite', cursive;
   color: #fff;
   min-height: 100vh;
   background: #212534;
+  box-sizing: border-box;
+  margin: 0;
+  height: 100vh;
+
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  grid-template-rows: 40px 1fr 110px;
+  grid-template-columns: 1fr 5rem;
+  text-align: center;
+}
+
+
+header {
+  grid-area: header;
+
+}
+
+main {
+  grid-area: main;
+
+}
+
+aside {
+  grid-area: aside;
+  background-color: red;
+}
+
+footer {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  padding-top: 15rem;
-  padding-bottom: 2rem;
-  box-sizing: border-box;
+  justify-items: center;
+  grid-area: footer;
+  box-shadow: 0px -5px 10px rgb(0, 0, 0, 0.5);
 }
 
-h1,
-h2 {
+footer p {
+  width: 10rem;
+}
+
+footer img {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid rgb(199, 93, 93, 0.8);
+  transition: 1s;
+ 
+}
+
+footer img:hover {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 2px solid rgb(199, 93, 93, 0.8);
   cursor: pointer;
-  padding: 0;
-  margin: .2rem;
 }
 
-h1:hover {
-  cursor: pointer;
-  color: blue;
+.box {
+  background-color: rebeccapurple;
+  border-radius: 8px;
+  width: 70px;
+  height: 70px;
 }
 
-h2:hover {
-  color: red;
+.box:hover {
+  animation-name: rotate;
+  animation-duration: .5s;
+  animation-direction: reverse;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
