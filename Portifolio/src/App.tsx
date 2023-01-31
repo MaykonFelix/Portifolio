@@ -1,10 +1,10 @@
-import './App.css'
+import { zinc } from 'tailwindcss/colors'
 
 function App() {
 
   return (
-    <div className='w-screen h-screen'>
-      <h1>
+    <div style={{backgroundColor: "lightblue"}}>
+      <h1 style={{color: "red"}}>
         Hello World!
       </h1>
     </div>
