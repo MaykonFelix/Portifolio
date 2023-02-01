@@ -5,7 +5,7 @@ import image from "./img/background.jpg"
 export function App() {
 
   return (
-    <div className='w-screen h-screen  flex-col bg-zinc-900 items-center justify-center gap-4'>
+    <div className='w-screen h-screen  flex bg-zinc-900 items-center justify-center gap-4'>
       <div className="bg-fixed" style={{ backgroundImage: `url(${image})` }}></div>
 
 
