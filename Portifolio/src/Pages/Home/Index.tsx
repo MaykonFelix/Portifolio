@@ -35,8 +35,8 @@ export default function Index() {
 
                 <h1>
                     <span>Developer.</span>
-                    <span>Preview.</span>
-                    <span>Ship.</span>
+                    <span>Maykon.</span>
+                    <span>Felix.</span>
                 </h1>
 
                 <div className="buttons">
