@@ -7,7 +7,7 @@ import Index from './Pages/Home/Index'
 export function App() {
 
   return (
-    <div className="bg-black" id="wrapper">
+    <div className="bg-black " id="wrapper">
       <Header />
       <Index />
       <Footer />
