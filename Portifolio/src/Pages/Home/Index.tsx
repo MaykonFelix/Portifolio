@@ -1,14 +1,8 @@
 
-import Header from "../../components/Header";
-import "./style.css";
-
-
 
 export default function Index() {
     return (
-        <div id="wrapper">
-
-            <Header />
+        <>
             <main>
 
                 <h1>
@@ -23,12 +17,9 @@ export default function Index() {
                 </div>
 
                 <h2>Project to learn about animation of gradients. A very beautiful thing to see.</h2>
-
-
             </main>
 
-            <footer>Feito com ❤</footer>
-        </div>
+        </>
     )
 }
 
