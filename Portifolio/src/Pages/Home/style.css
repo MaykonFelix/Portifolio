@@ -40,7 +40,6 @@ button {
 }
 
 html {
-    background: var(--black);
     color: var(--gray);
     font-size: 62.5%;
 }
