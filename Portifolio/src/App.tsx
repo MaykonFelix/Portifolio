@@ -1,10 +1,29 @@
+import React from "react"
+import Features from "./component/Features/Features"
+import Home from "./component/Hero/Home"
+import Portfolio from "./component/Portfolio/Portfolio"
+import Resume from "./component/Resume/Resume"
+import Testimonial from "./component/Testimonial/Testimonial"
+import Blog from "./component/Blog/Blog"
+import Contact from "./component/Contact/Contact"
 
-function App() {
+import Header from "./component/head"
+import Footer from "./component/footer"
 
+import "./App.css"
+
+const App = () => {
   return (
     <>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
+      <Header />
+      <Home />
+      <Features />
+      <Portfolio />
+      <Resume />
+      <Testimonial />
+      <Blog />
+      <Contact />
+      <Footer />
     </>
   )
 }
