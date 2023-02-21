@@ -10,19 +10,19 @@ const data = [
     id: 2,
     image: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-web-development-web-development-flaticons-lineal-color-flat-icons.png",
     title: "Web Developer",
-    desc: "Contribuindo atualmente com o desenvolvimento Web em tecnologias inovadoras para atender as necessidades da empresa que estou atuando, utilizando ReactJS, Node e MYSQL. ",
+    desc: "Contribuindo com o desenvolvimento Web em tecnologias inovadoras para atender as necessidades da empresa que estou atuando, utilizando ReactJS, Node e MYSQL. Minha Principal Atuação atualmente. ",
   },
   {
     id: 3,
     image: "https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/null/external-agile-web-design-and-development-flatart-icons-lineal-color-flatarticons.png",
     title: "Método Ágil",
-    desc: "Contribuo com metodologia ágil 'Metodo Kamblam', acredito que cada empresa possui um .",
+    desc: "Contribuo com metodologia ágil, acredito que cada empresa possui sua dinâmica e método. Então me adequo as necessidades e aprendo rapidamente para somar. ( Atualmente estou usando Método Kanban)",
   },
   {
     id: 4,
     image: "https://img.icons8.com/fluency/48/null/design.png",
     title: "Design Grafico",
-    desc: "Tenho Habilidades e Conhecimentos Praticos que contribui para o desenvolvimento e o conhecimento e apresentavel para as pessoas.",
+    desc: "Tenho Conhecimentos e Experiencia com Design Grafico, utilizo para somar junto com modelagem e facilitar simplificar a apresentação de pré-projetos e projetos para outras pessoas.",
   },
 
 ]
