@@ -3,12 +3,14 @@ import "./style.css"
 import LogCatColor from "../pic/LogCatColor.png"
 
 
+
 const Header = () => {
     // Fixed Header
     window.addEventListener("scroll", function () {
         const header = document.querySelector(".header");
-        header.classList.toggle("active", window.scrollY > 70)
+        header?.classList.toggle("active", window.scrollY > 70)
     })
+
     // Toogle Menu
     const [Mobile, setMobile] = useState(false)
 
@@ -18,7 +20,7 @@ const Header = () => {
             <header className='header'>
                 <div className='container d_flex'>
                     <div className='logo'>
-                        {/*  <img src={LogCatColor} alt='Logo' /> */}
+                        <img src={LogCatColor} alt='Logo' />
                     </div>
 
 

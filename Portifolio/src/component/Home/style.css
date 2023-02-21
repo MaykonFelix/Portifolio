@@ -46,12 +46,11 @@
 }
 
 .hero_btn button {
-    margin-right: 30px;
-    margin-top: 20px;
+    margin-right: 25px;
+    margin-top: 25px;
 }
 
-.hero_btn i,
-a {
+.hero_btn a {
     font-size: 20px;
 }
 

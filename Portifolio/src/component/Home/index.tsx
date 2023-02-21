@@ -1,8 +1,9 @@
 import "./style.css"
 import hero from "../pic/hero.png"
-import skill1 from "../pic/React.png"
-import skill2 from "../pic/Node.png"
-import skill3 from "../pic/TS.png"
+import ReactLogo from "../pic/ReactLogo.png"
+import NodeLogo from "../pic/NodeLogo.png"
+import TSLogo from "../pic/TSLogo.png"
+import MySQLogo from "../pic/MySQLogo.png"
 import { Typewriter } from "react-simple-typewriter"
 
 const Home = () => {
@@ -31,6 +32,22 @@ const Home = () => {
 
                                     <button className='btn_shadow'>
                                         <a
+                                            href="https://github.com/MaykonFelix"
+                                            target="_blank"
+                                            className='fab fa-github'
+                                        ></a>
+                                    </button>
+
+                                    <button className='btn_shadow'>
+                                        <a
+                                            href="https://www.linkedin.com/in/maykonfelixwebdeveloper/"
+                                            target="_blank"
+                                            className='fab fa-linkedin-in'
+                                        ></a>
+                                    </button>
+
+                                    <button className='btn_shadow'>
+                                        <a
                                             href="https://www.facebook.com/maykon.felix.1"
                                             target="_blank"
                                             className='fab fa-facebook-f'
@@ -44,34 +61,29 @@ const Home = () => {
                                             className='fab fa-instagram'
                                         ></a>
                                     </button>
-
-                                    <button className='btn_shadow'>
-                                        <a
-                                            href="https://www.linkedin.com/in/maykonfelixwebdeveloper/"
-                                            target="_blank"
-                                            className='fab fa-linkedin-in'
-                                        ></a>
-                                    </button>
-
                                 </div>
                             </div>
+
                             <div className='col_1'>
                                 <h4>MELHORES HABILIDADES</h4>
                                 <button className='btn_shadow'>
-                                    <img src={skill1} alt='' />
+                                    <img src={ReactLogo} alt='' />
                                 </button>
                                 <button className='btn_shadow'>
-                                    <img src={skill2} alt='' />
+                                    <img src={NodeLogo} alt='' />
                                 </button>
                                 <button className='btn_shadow'>
-                                    <img src={skill3} alt='' />
+                                    <img src={TSLogo} alt='' />
+                                </button>
+                                <button className='btn_shadow'>
+                                    <img src={MySQLogo} alt='' />
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div className='right'>
                         <div className='right_img'>
-                            <img src={hero} alt='' />
+                            <img src={hero} alt='Foto Pessoal' />
                         </div>
                     </div>
                 </div>

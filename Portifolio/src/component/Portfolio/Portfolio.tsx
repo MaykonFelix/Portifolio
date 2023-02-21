@@ -1,4 +1,3 @@
-import React from "react"
 import "./Portfolio.css"
 import Card from "./Card"
 import Portfolio_data from "./Portfolio_data"
@@ -9,8 +8,8 @@ const Portfolio = () => {
       <section className='Portfolio top' id='portfolio'>
         <div className='container'>
           <div className='heading text-center '>
-            <h4>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h4>
-            <h1>My Portfolio</h1>
+            <h4>VISITA MEU PORTIFOLIO E DEIXE SEU FEEDBACK</h4>
+            <h1>Meu Portfolio</h1>
           </div>
 
           <div className='content grid'>

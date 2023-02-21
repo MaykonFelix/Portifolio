@@ -1,6 +1,13 @@
 const data = [
   {
     id: 1,
+    image: "https://img.icons8.com/ios-filled/50/null/combo-chart--v2.png",
+    title: "Crescimento Empresarial",
+    desc: " Contribuo com o crescimento empresarial com medidas inovadoras e conhecimentos práticos, acredito que todo serviço me ajuda ampliar meus conhecimentos profissionais e de somar esforços juntos com a empresa que estou atuando.",
+  },
+
+  {
+    id: 7,
     image: "https://img.icons8.com/ios/64/000000/menu.png",
     title: "Business Stratagy",
     desc: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
@@ -35,5 +42,8 @@ const data = [
     title: "Personal Portfolio April",
     desc: " It uses a dictionary of over 200 Latin words, combined with a handful of model sentence.",
   },
+
+
+
 ]
 export default data

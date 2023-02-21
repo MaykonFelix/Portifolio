@@ -23,7 +23,7 @@ header ul li a:hover {
 }
 
 
-/* .logo img {
+.logo img {
     width: 4rem;
     filter: brightness(1.2);
     transition: 0.5s;
@@ -37,7 +37,7 @@ header ul li a:hover {
 .logo img:hover {
     border: 4.5px solid #025B93;
     filter: brightness(1.4);
-} */
+}
 
 .home-btn {
     padding: 18px 25px;
