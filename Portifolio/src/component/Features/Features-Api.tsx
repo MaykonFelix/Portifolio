@@ -16,13 +16,13 @@ const data = [
     id: 3,
     image: "https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/null/external-agile-web-design-and-development-flatart-icons-lineal-color-flatarticons.png",
     title: "Método Ágil",
-    desc: "Contribui na atual empresa a implementação da metodologia ágil 'Metodo Kamblam'.",
+    desc: "Contribuo com metodologia ágil 'Metodo Kamblam', acredito que cada empresa possui um .",
   },
   {
     id: 4,
     image: "https://img.icons8.com/fluency/48/null/design.png",
     title: "Design Grafico",
-    desc: "Contribui na atual empresa a implementação da metodologia ágil 'Metodo Kamblam'.",
+    desc: "Tenho Habilidades e Conhecimentos Praticos que contribui para o desenvolvimento e o conhecimento e apresentavel para as pessoas.",
   },
 
 ]
