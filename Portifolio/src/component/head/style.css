@@ -4,7 +4,7 @@ header {
 }
 
 header .container {
-    padding-top: 15px;
+    padding-top: 5px;
 }
 
 header ul li {
@@ -25,15 +25,17 @@ header ul li a:hover {
 
 .logo img {
     width: 5.3rem;
-    border: 4.5px solid rgb(83, 83, 83);
-    border-radius: 3rem;
     filter: brightness(1.2);
     transition: 0.5s;
+    border: 4.5px solid #031526;
+    border-radius: 100%;
+    padding: 2px;
+
 }
 
 .logo img:hover {
-    border: 4.5px solid #ff014f;
-    filter: brightness(0);
+    border: 4.5px solid #025B93;
+    filter: brightness(1.4);
 }
 
 .home-btn {
