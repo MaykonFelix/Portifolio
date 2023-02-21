@@ -1,8 +1,8 @@
 import "./style.css"
 import hero from "../pic/hero.png"
-import skill1 from "../pic/skill1.png"
-import skill2 from "../pic/skill2.png"
-import skill3 from "../pic/skill3.png"
+import skill1 from "../pic/React.png"
+import skill2 from "../pic/Node.png"
+import skill3 from "../pic/TS.png"
 import { Typewriter } from "react-simple-typewriter"
 
 const Home = () => {
@@ -22,25 +22,41 @@ const Home = () => {
                             </span>
                         </h2>
 
-                        <p>I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.</p>
+                        <p>Ola, Obrigado por entrar em minha pagina, esta em construção, provavel que na proxima vez que voltar a sua experiencia vai ser diferente.</p>
 
                         <div className='hero_btn d_flex'>
                             <div className='col_1'>
                                 <h4>COMO ME ENCONTAR</h4>
                                 <div className='button'>
+
                                     <button className='btn_shadow'>
-                                        <i className='fab fa-facebook-f'></i>
+                                        <a
+                                            href="https://www.facebook.com/maykon.felix.1"
+                                            target="_blank"
+                                            className='fab fa-facebook-f'
+                                        ></a>
                                     </button>
+
                                     <button className='btn_shadow'>
-                                        <i className='fab fa-instagram'></i>
+                                        <a
+                                            href="https://www.instagram.com/maykon.felix.silva/"
+                                            target="_blank"
+                                            className='fab fa-instagram'
+                                        ></a>
                                     </button>
+
                                     <button className='btn_shadow'>
-                                        <i className='fab fa-linkedin-in'></i>
+                                        <a
+                                            href="https://www.linkedin.com/in/maykonfelixwebdeveloper/"
+                                            target="_blank"
+                                            className='fab fa-linkedin-in'
+                                        ></a>
                                     </button>
+
                                 </div>
                             </div>
                             <div className='col_1'>
-                                <h4>BEST SKILL ON</h4>
+                                <h4>MELHORES HABILIDADES</h4>
                                 <button className='btn_shadow'>
                                     <img src={skill1} alt='' />
                                 </button>

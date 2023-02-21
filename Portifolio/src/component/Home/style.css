@@ -47,11 +47,14 @@
 
 .hero_btn button {
     margin-right: 30px;
+    margin-top: 20px;
 }
 
-.hero_btn i {
+.hero_btn i,
+a {
     font-size: 20px;
 }
+
 
 .hero_btn button img {
     width: 20px;
