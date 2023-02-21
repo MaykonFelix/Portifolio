@@ -1,6 +1,5 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import "./style.css"
-import logo from "../pic/logo.png"
 
 const Header = () => {
     // fixed Header
@@ -10,13 +9,17 @@ const Header = () => {
     })
     // Toogle Menu
     const [Mobile, setMobile] = useState(false)
+
+
     return (
         <>
             <header className='header'>
                 <div className='container d_flex'>
                     <div className='logo'>
-                        <img src={logo} alt='' />
+                        <img src="http://github.com/MaykonFelix.png" alt='Logo' />
+                        
                     </div>
+                    
 
                     <div className='navlink'>
                         <ul className={Mobile ? "nav-links-mobile" : "link f_flex uppercase"} onClick={() => setMobile(false)}>
@@ -42,9 +45,7 @@ const Header = () => {
                             <li>
                                 <a href='#contact'>contact</a>
                             </li>
-                            <li>
-                                <button className='home-btn'>BUY NOW</button>
-                            </li>
+
                         </ul>
 
                         <button className='toggle' onClick={() => setMobile(!Mobile)}>

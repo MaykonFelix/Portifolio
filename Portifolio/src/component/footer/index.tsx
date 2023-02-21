@@ -1,4 +1,4 @@
-import logo1 from "../pic/f_logo.png"
+import "./style.css"
 
 const Footer = () => {
     return (
@@ -6,9 +6,9 @@ const Footer = () => {
             <footer>
                 <div className='conatiner text-center top'>
                     <div className='img'>
-                        <img src={logo1} alt='' />
+                        <img src="http://github.com/MaykonFelix.png" alt='Logo' />
                     </div>
-                    <p>© 2023. All rights reserved by Equipe-Felix.</p>
+                    <p>© 2023. Todos direitors reservado por Maykon Felix.</p>
                 </div>
             </footer>
         </>
