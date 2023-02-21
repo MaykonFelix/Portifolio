@@ -9,9 +9,7 @@ import Header from "./component/head"
 import Home from "./component/Home"
 import Footer from "./component/footer"
 
-
-
-import "./App.css"
+import "./global.css"
 
 const App = () => {
   return (
