@@ -1,7 +1,5 @@
-import React from "react"
 import Portfolio from "./component/Portfolio/Portfolio"
 import Resume from "./component/Resume/Resume"
-import Testimonial from "./component/Testimonial/Testimonial"
 import Contact from "./component/Contact/Contact"
 import Features from "./component/Features/Features"
 import Header from "./component/head"
@@ -18,8 +16,6 @@ const App = () => {
       <Features />
       <Portfolio />
       <Resume />
-      <Testimonial />
-
       <Contact />
       <Footer />
     </>

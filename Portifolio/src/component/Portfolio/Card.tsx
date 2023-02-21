@@ -1,4 +1,12 @@
-import React, { useState } from "react"
+import { useState } from "react"
+
+interface propsModal {
+  image: string;
+  category: string;
+  totalLike: number;
+  title: string;
+}
+
 
 const Card = (props) => {
   const [modal, setModal] = useState(false)
@@ -27,7 +35,7 @@ const Card = (props) => {
         <div className='title'>
           <h2 onClick={toggleModal}>{props.title}</h2>
           <a href='#popup' className='arrow' onClick={toggleModal}>
-            <i class='fas fa-arrow-right'></i>
+            <i className='fas fa-arrow-right'></i>
           </a>
         </div>
       </div>
@@ -47,19 +55,20 @@ const Card = (props) => {
               <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
               <div className='button f_flex mtop'>
                 <button className='btn_shadow'>
-                  LIKE THIS <i class='far fa-thumbs-up'></i>
+                  LIKE THIS <i className='far fa-thumbs-up'></i>
                 </button>
                 <button className='btn_shadow'>
-                  VIEW PROJECT<i class='fas fa-chevron-right'></i>
+                  VIEW PROJECT<i className='fas fa-chevron-right'></i>
                 </button>
               </div>
               <button className='close-modal btn_shadow' onClick={toggleModal}>
-                <i class='fas fa-times'></i>
+                <i className='fas fa-times'></i>
               </button>
             </div>
           </div>
-        </div>
-      )}
+        </div >
+      )
+      }
     </>
   )
 }

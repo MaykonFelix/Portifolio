@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import contact1 from "./contact1.png"
 import "./Contact.css"
 
@@ -8,7 +8,8 @@ const Contact = () => {
     phone: "",
     email: "",
     subject: "",
-    message: "",})
+    message: "",
+  })
 
   const InputEvent = (event) => {
     const { name, value } = event.target
@@ -37,8 +38,8 @@ const Contact = () => {
       <section className='Contact' id='contact'>
         <div className='container top'>
           <div className='heading text-center'>
-            <h4>CONTACT</h4>
-            <h1>Contact With Me</h1>
+            <h4>CONTATO</h4>
+            <h1>ENTRE EM CONTATO!!!</h1>
           </div>
 
           <div className='content d_flex'>
@@ -48,21 +49,21 @@ const Contact = () => {
                   <img src={contact1} alt='' />
                 </div>
                 <div className='details'>
-                  <h1>Nevine Acotanza</h1>
-                  <p>Chief Operating Officer</p>
-                  <p>I am available for freelance work. Connect with me via and call in to my account.</p> <br />
-                  <p>Phone: +01234567890</p>
-                  <p>Email: admin@example.com</p> <br />
-                  <span>FIND WITH ME</span>
+                  <h1>Maykon Felix</h1>
+                  <p>Web Developer</p>
+                  <p>Será uma honra poder lhe atender. Muito Obrigado!</p> <br />
+                  <p>Phone: +55 43 9 9111-4539</p>
+                  <p>Email: equipefelixx@gmail.com</p> <br />
+                  <span>COMO ME ENCONTAR</span>
                   <div className='button f_flex'>
                     <button className='btn_shadow'>
-                      <i className='fab fa-facebook-f'></i>
+                      <a href="https://www.facebook.com/maykon.felix.1" target="_blank" className='fab fa-facebook-f'></a>
                     </button>
                     <button className='btn_shadow'>
-                      <i className='fab fa-instagram'></i>
+                      <a href="https://www.instagram.com/maykon.felix.silva/" target="_blank" className='fab fa-instagram'></a>
                     </button>
                     <button className='btn_shadow'>
-                      <i className='fab fa-twitter'></i>
+                      <a href="https://www.linkedin.com/in/maykonfelixwebdeveloper/" target="_blank" className='fab fa-linkedin-in'></a>
                     </button>
                   </div>
                 </div>
@@ -73,28 +74,28 @@ const Contact = () => {
               <form onSubmit={formSubmit}>
                 <div className='f_flex'>
                   <div className='input row'>
-                    <span>YOUR NAME</span>
+                    <span>Seu Nome</span>
                     <input type='text' name='fullname' value={data.fullname} onChange={InputEvent} />
                   </div>
                   <div className='input row'>
-                    <span>PHONE NUMBER </span>
+                    <span>Telefone</span>
                     <input type='number' name='phone' value={data.phone} onChange={InputEvent} />
                   </div>
                 </div>
                 <div className='input'>
-                  <span>EMAIL </span>
+                  <span>E-MAIL </span>
                   <input type='email' name='email' value={data.email} onChange={InputEvent} />
                 </div>
                 <div className='input'>
-                  <span>SUBJECT </span>
+                  <span>Titulo </span>
                   <input type='text' name='subject' value={data.subject} onChange={InputEvent} />
                 </div>
                 <div className='input'>
-                  <span>YOUR MESSAGE </span>
-                  <textarea cols='30' rows='10' name='message' value={data.message} onChange={InputEvent}></textarea>
+                  <span>Sua Mensagem </span>
+                  <textarea cols={30} rows={10} name='message' value={data.message} onChange={InputEvent}></textarea>
                 </div>
                 <button className='btn_shadow'>
-                  SEND MESSAGE <i className='fa fa-long-arrow-right'></i>
+                  ENVIAR MENSAGEM <i className='fa fa-long-arrow-right'></i>
                 </button>
               </form>
             </div>
