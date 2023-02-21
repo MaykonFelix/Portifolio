@@ -7,8 +7,7 @@ interface propsModal {
   title: string;
 }
 
-
-const Card = (props) => {
+const Card = (props: propsModal) => {
   const [modal, setModal] = useState(false)
 
   const toggleModal = () => {
