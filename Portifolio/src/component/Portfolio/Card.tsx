@@ -5,6 +5,7 @@ interface propsModal {
   category: string;
   totalLike: string;
   title: string;
+  description?: string;
 }
 
 const Card = (props: propsModal) => {
@@ -47,11 +48,11 @@ const Card = (props: propsModal) => {
             <div className='modal-img left'>
               <img src={props.image} alt='' />
             </div>
+
             <div className='modal-text right'>
-              <span>Featured - Design</span>
+              <span>{props.category}</span>
               <h1>{props.title}</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
-              <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
+              <p>{props.description}</p>
               <div className='button f_flex mtop'>
                 <button className='btn_shadow'>
                   LIKE THIS <i className='far fa-thumbs-up'></i>

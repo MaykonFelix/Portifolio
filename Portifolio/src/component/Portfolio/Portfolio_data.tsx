@@ -9,6 +9,7 @@ const Portfolio_data = [
     category: "WEB DEVELOPER",
     totalLike: "610",
     title: "Serviço de Web Developer ",
+    description: "Serviço Realizado ",
     image: Imagem01,
   },
   {
@@ -16,6 +17,7 @@ const Portfolio_data = [
     category: "PHOTOSHOP",
     totalLike: "630",
     title: "Logo design creativity & Application ",
+    description: "Serviço Realizado ",
     image: Imagem02,
   },
   {
@@ -23,6 +25,7 @@ const Portfolio_data = [
     category: "FIGMA",
     totalLike: "360",
     title: "Mobile app landing design & Services",
+    description: "Serviço Realizado ",
     image: Imagem03,
   },
 ]
