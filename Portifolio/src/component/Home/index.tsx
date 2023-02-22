@@ -30,37 +30,20 @@ const Home = () => {
                                 <h4>COMO ME ENCONTAR</h4>
                                 <div className='button'>
 
-                                    <button className='btn_shadow'>
-                                        <a
-                                            href="https://github.com/MaykonFelix"
-                                            target="_blank"
-                                            className='fab fa-github'
-                                        ></a>
-                                    </button>
+                                    <a href="https://github.com/MaykonFelix" target="_blank" >
+                                        <button className='btn_shadow' ><i className='fab fa-github'></i></button>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/maykonfelixwebdeveloper/" target="_blank">
+                                        <button className='btn_shadow'><i className='fab fa-linkedin-in'></i>
+                                        </button>
+                                    </a>
+                                    <a href="https://www.facebook.com/maykon.felix.1" target="_blank">
+                                        <button className='btn_shadow'><i className='fab fa-facebook-f'></i></button>
+                                    </a>
+                                    <a href="https://www.instagram.com/maykon.felix.silva/" target="_blank">
+                                        <button className='btn_shadow'><i className='fab fa-instagram'></i></button>
+                                    </a>
 
-                                    <button className='btn_shadow'>
-                                        <a
-                                            href="https://www.linkedin.com/in/maykonfelixwebdeveloper/"
-                                            target="_blank"
-                                            className='fab fa-linkedin-in'
-                                        ></a>
-                                    </button>
-
-                                    <button className='btn_shadow'>
-                                        <a
-                                            href="https://www.facebook.com/maykon.felix.1"
-                                            target="_blank"
-                                            className='fab fa-facebook-f'
-                                        ></a>
-                                    </button>
-
-                                    <button className='btn_shadow'>
-                                        <a
-                                            href="https://www.instagram.com/maykon.felix.silva/"
-                                            target="_blank"
-                                            className='fab fa-instagram'
-                                        ></a>
-                                    </button>
                                 </div>
                             </div>
 
