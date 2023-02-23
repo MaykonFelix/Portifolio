@@ -5,8 +5,6 @@ interface propsCard {
   year: string;
   title: string;
   desc: string;
-  rate: string;
-
 }
 
 const Card = (props: propsCard) => {
@@ -17,9 +15,6 @@ const Card = (props: propsCard) => {
           <div className='title'>
             <h2>{props.title}</h2>
             <span>{props.year}</span>
-          </div>
-          <div className='rate'>
-            <button className='btn_shadow '>{props.rate}</button>
           </div>
         </div>
         <hr />

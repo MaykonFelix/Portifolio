@@ -39,14 +39,6 @@ const Header = () => {
                             <li>
                                 <a href='#resume'>Resumo</a>
                             </li>
-                            <li>
-                                <a href='#clients'>Trabalhos</a>
-                            </li>
-
-                            <li>
-                                <a href='#contact'>Contato</a>
-                            </li>
-
                             <button className='toggle' onClick={() => setMobile(!Mobile)}>
                                 {Mobile ? <i className='fas fa-times close home-btn'></i> : <i className='fas fa-bars open'></i>}
                             </button>
