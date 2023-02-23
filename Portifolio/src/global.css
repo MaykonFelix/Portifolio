@@ -19,6 +19,8 @@ body::-webkit-scrollbar {
   width: 15px;
 }
 
+
+
 body::-webkit-scrollbar-track {
   background-color: #ecf0f3;
   /* box-shadow: inset 0px 0px 2px 0px #7700ff; */

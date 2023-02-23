@@ -69,8 +69,8 @@ header ul li a:hover {
     z-index: 1000;
     width: 100%;
     background-color: #ecf0f3;
-    box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
-    transition: 0.5s;
+    box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.274);
+    transition: 0.8s;
 }
 
 @media (max-width: 768px) {

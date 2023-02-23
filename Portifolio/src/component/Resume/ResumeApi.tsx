@@ -23,23 +23,23 @@ const ResumeApi = [
   {
     id: 4,
     category: "experience",
-    year: "Origini Italiane SAS (2021 - 2023) ",
-    title: "Desenvolvedor",
-    desc: "Desenvolvedor de sistemas Junior.",
+    year: "Origini Italiane SAS (2021 - Atualmente) ",
+    title: "Desenvolvedor de Software - PJ",
+    desc: "Desenvolvendo e facilitando o acesso a informação para a Empresa Origini Italiane. Desenvolvendo Web ( Sql + NodeJS + ReactJS ). Métodos Ágeis ( Kanban ).",
   },
   {
     id: 5,
     category: "experience",
     year: "Felix Acabamentos ME (2017 - 2020) ",
-    title: "Design Grafico",
-    desc: "Designer Grafico.",
+    title: "Design Grafico - PJ",
+    desc: "Criação de artes para divulgação em redes sociais, dispondo os elementos de comunicação visual de forma harmoniosa e objetiva para alcançar e engajar o público-alvo do perfil.",
   },
   {
     id: 6,
     category: "experience",
-    year: "Construcia (2015 - 2017) ",
-    title: "Analista de Redes",
-    desc: "Monitoramento.",
+    year: "Construcia ME (2015 - 2017) ",
+    title: "Analista de Redes - CLT",
+    desc: "Monitoramento das atividades e fluxo de redes a fim de avaliar processo de informações e desempenho, mapeando as funções e ineficiências do negócio, Implementação configuração e manutenção em redes de computadores, como firewall, roteadores, cabeamento estruturado, servidores Windows AD, gerenciamento de arquivo.",
   },
 ]
 

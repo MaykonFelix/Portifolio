@@ -12,7 +12,7 @@
 }
 
 .Resume hr {
-  margin: 30px 0 30px 0;
+  margin: 20px 0 20px 0;
   border: 1px solid #e3e9ed;
   background-color: #e3e9ed;
 }
@@ -25,7 +25,7 @@
 }
 
 .Resume p {
-  font-size: 18px;
+  font-size: 13px;
   transition: 0.5s;
 }
 
@@ -62,7 +62,7 @@
   top: 16%;
   left: 0;
   height: 118vh;
-  width: 5px;
+  width: 10px;
   background: #d9dee2;
   z-index: -2;
 }
