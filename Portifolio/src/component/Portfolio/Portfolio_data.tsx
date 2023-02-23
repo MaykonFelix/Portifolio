@@ -25,9 +25,9 @@ const Portfolio_data = [
   {
     id: 3,
     category: "PHOTOSHOP",
-    totalLike: "PS 20",
-    title: "Adicionando",
-    description: "Serviço Realizado Publicitario",
+    totalLike: "PS",
+    title: "Varios Trabalhos",
+    description: "Serviço Realizados nos trabalhos passados, com Phostoshop, Corel Draw, Ilustrator, Adobe Dimension.",
     image: Imagem02,
     webLink: "#",
   },
