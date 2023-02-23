@@ -1,5 +1,15 @@
 
-const Card = (props) => {
+interface propsCard {
+  id?: number;
+  category?: string;
+  year: string;
+  title: string;
+  desc: string;
+  rate: string;
+
+}
+
+const Card = (props: propsCard) => {
   return (
     <>
       <div className='box btn_shadow'>
