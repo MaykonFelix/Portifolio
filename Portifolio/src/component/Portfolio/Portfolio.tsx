@@ -9,7 +9,7 @@ const Portfolio = () => {
         <div className='container'>
           <div className='heading text-center '>
             <h4>VISITA MEU PORTIFOLIO E DEIXE SEU FEEDBACK</h4>
-            <h1>Meu Portfolio <span> (Em Consttrução) </span></h1>
+            <h1>Meu Portfolio <span> (Em Construção) </span></h1>
           </div>
 
           <div className='content grid'>
