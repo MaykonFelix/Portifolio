@@ -34,8 +34,7 @@ const Home = () => {
                                         <button className='btn_shadow' ><i className='fab fa-github'></i></button>
                                     </a>
                                     <a href="https://www.linkedin.com/in/maykonfelixwebdeveloper/" target="_blank">
-                                        <button className='btn_shadow'><i className='fab fa-linkedin-in'></i>
-                                        </button>
+                                        <button className='btn_shadow'><i className='fab fa-linkedin-in'></i></button>
                                     </a>
                                     <a href="https://www.facebook.com/maykon.felix.1" target="_blank">
                                         <button className='btn_shadow'><i className='fab fa-facebook-f'></i></button>

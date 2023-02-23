@@ -55,16 +55,23 @@ const Contact = () => {
                   <p>Phone: +55 43 9 9111-4539</p>
                   <p>Email: equipefelixx@gmail.com</p> <br />
                   <span>COMO ME ENCONTAR</span>
+
                   <div className='button f_flex'>
-                    <button className='btn_shadow'>
-                      <a href="https://www.facebook.com/maykon.felix.1" target="_blank" className='fab fa-facebook-f'></a>
-                    </button>
-                    <button className='btn_shadow'>
-                      <a href="https://www.instagram.com/maykon.felix.silva/" target="_blank" className='fab fa-instagram'></a>
-                    </button>
-                    <button className='btn_shadow'>
-                      <a href="https://www.linkedin.com/in/maykonfelixwebdeveloper/" target="_blank" className='fab fa-linkedin-in'></a>
-                    </button>
+
+                    <a href="https://www.linkedin.com/in/maykonfelixwebdeveloper/" target="_blank">
+                      <button className='btn_shadow'><i className='fab fa-linkedin-in'></i></button>
+                    </a>
+                    <a href="https://www.facebook.com/maykon.felix.1" target="_blank">
+                      <button className='btn_shadow'><i className='fab fa-facebook-f'></i></button>
+                    </a>
+                    <a href="https://www.instagram.com/maykon.felix.silva/" target="_blank">
+                      <button className='btn_shadow'><i className='fab fa-instagram'></i></button>
+                    </a>
+                    <a href="https://github.com/MaykonFelix" target="_blank" >
+                      <button className='btn_shadow' ><i className='fab fa-github'></i></button>
+                    </a>
+
+
                   </div>
                 </div>
               </div>
