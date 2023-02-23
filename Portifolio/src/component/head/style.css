@@ -24,18 +24,18 @@ header ul li a:hover {
 
 
 .logo img {
-    width: 4rem;
+    width: 3.5rem;
     filter: brightness(1.2);
     transition: 0.5s;
-    border: 4.5px solid #031526;
+    border: 3px solid #031526;
     border-radius: 100%;
-    padding: 2px;
-    margin-top: 5px;
+    padding: 0.2rem;
+    margin-top: 10px;
 
 }
 
 .logo img:hover {
-    border: 4.5px solid #025B93;
+    border: 3px solid #025B93;
     filter: brightness(1.4);
 }
 
