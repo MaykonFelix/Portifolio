@@ -4,11 +4,12 @@ const Footer = () => {
     return (
         <>
             <footer>
-                <div className='conatiner text-center top'>
+                <div className='container text-center'>
                     <div className='img'>
                         <img src="http://github.com/MaykonFelix.png" alt='Logo' />
                     </div>
                     <p>© 2023. Todos direitors reservado por Maykon Felix.</p>
+                    <span>Muito Obrigado por me conhecer, no momento estamos em construção e provavel que na proxima vez que você voltar a sua experiencia vai ser diferente.</span>
                 </div>
             </footer>
         </>
