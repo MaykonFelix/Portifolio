@@ -32,7 +32,7 @@ const Card = (props: propsModal) => {
         <div className='category d_flex'>
           <span onClick={toggleModal}>{props.category}</span>
           <label>
-            <i className='far fa-heart'></i> {props.totalLike}
+            {props.totalLike}
           </label>
         </div>
 
@@ -63,14 +63,9 @@ const Card = (props: propsModal) => {
               <p>{props.description}</p>
               <div className='button f_flex mtop'>
 
-                <button className='btn_shadow'>
-                  LIKE THIS <i className='far fa-thumbs-up'></i>
-                </button>
-
-                <a href={props.webLink}>
-
+                <a href={props.webLink} target="_blank">
                   <button className='btn_shadow'>
-                    VIEW PROJECT<i className='fas fa-chevron-right'></i>
+                    Projeto<i className='fas fa-chevron-right'></i>
                   </button>
                 </a>
 
