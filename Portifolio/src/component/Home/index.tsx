@@ -64,12 +64,14 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+
                     <div className='right'>
                         <div className='right_img'>
-                            <img src={hero} alt='Foto Pessoal' />
+                            {/* <img src={hero} alt='Foto Pessoal' /> */}
                         </div>
                     </div>
                 </div>
+
             </section>
         </>
     )

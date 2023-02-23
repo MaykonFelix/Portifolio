@@ -15,6 +15,23 @@ body {
   background-color: #ecf0f3;
 }
 
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #ecf0f3;
+  /* box-shadow: inset 0px 0px 2px 0px #7700ff; */
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  /*background-color: blue;*/
+  background-image: linear-gradient(#2b7cffc8, #cc00ff);
+  border-radius: 5px;
+}
+
+
 .container {
   max-width: 95%;
   margin: auto;
