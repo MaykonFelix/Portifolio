@@ -5,9 +5,10 @@ import Card from "./Card"
 const Features = () => {
   return (
     <>
-      <section className='features top' id='features'>
+      <div id="features"></div>
+      <section className='features top'>
         <div className='container'>
-          <div className='heading'>
+          <div className='heading text-center'>
             <h4>Conhecimentos</h4>
             <h1>O que eu Faço</h1>
           </div>

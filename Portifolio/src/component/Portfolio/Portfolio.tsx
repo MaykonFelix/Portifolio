@@ -5,10 +5,11 @@ import Portfolio_data from "./Portfolio_data"
 const Portfolio = () => {
   return (
     <>
-      <section className='Portfolio top' id='portfolio'>
+      <div id="portfolio"></div>
+      < section className='Portfolio top'>
         <div className='container'>
-          <div className='heading text-center '>
-            <h4>VISITA MEU PORTIFOLIO E DEIXE SEU FEEDBACK</h4>
+          <div className='heading text-center'>
+            <h4>Bem Vindo</h4>
             <h1>Meu Portfolio <span> (Em Construção) </span></h1>
           </div>
 
@@ -18,7 +19,7 @@ const Portfolio = () => {
             })}
           </div>
         </div>
-      </section>
+      </section >
     </>
   )
 }
