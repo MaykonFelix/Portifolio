@@ -29,7 +29,7 @@ export default function Partic() {
                         value: "transparent",
                     },
                 },
-                fpsLimit: 80,
+                fpsLimit: 120,
                 interactivity: {
                     events: {
                         onClick: {
@@ -40,31 +40,31 @@ export default function Partic() {
                             enable: true,
                             mode: "repulse",
                         },
-                        resize: true,
+                        resize: false,
                     },
                     modes: {
                         push: {
                             quantity: 2,
                         },
                         repulse: {
-                            distance: 90,
+                            distance: 100,
                             duration: 0.2,
                         },
                     },
                 },
                 particles: {
                     color: {
-                        value: "#ff0088",
+                        value: "#ff008883",
                     },
                     links: {
-                        color: "#000000",
-                        distance: 180,
+                        color: "#7300c0",
+                        distance: 150,
                         enable: true,
-                        opacity: 0.1,
-                        width: 0.5,
+                        opacity: 1,
+                        width: 0.1,
                     },
                     collisions: {
-                        enable: true,
+                        enable: false,
                     },
                     move: {
                         direction: "none",
@@ -73,21 +73,21 @@ export default function Partic() {
                             default: "bounce",
                         },
                         random: true,
-                        speed: 3,
+                        speed: 2,
                         straight: false,
                     },
                     number: {
                         density: {
-                            enable: true,
+                            enable: false,
                             area: 800,
                         },
-                        value: 80,
+                        value: 50,
                     },
                     opacity: {
                         value: 0.5,
                     },
                     shape: {
-                        type: "circle",
+                        type: "square",
                     },
                     size: {
                         value: { min: 0.2, max: 5 },

@@ -25,8 +25,6 @@ const Home = () => {
 
                         <p>Em busca de crescimento profissional na área de Desenvolvimento, de forma a contribuir com o crescimento empresarial com medidas inovadoras e conhecimentos práticos, acredito que todo serviço me ajuda ampliar meus conhecimentos profissionais e de somar esforços junto com a empresa que estou atuando.</p>
 
-                        {/* <p>Ola, Obrigado por entrar em minha pagina, no momento esta em construção, provavel que na proxima vez que você voltar a sua experiencia vai ser diferente.</p> */}
-
                         <div className='hero_btn d_flex'>
                             <div className='col_1'>
                                 <h4>COMO ME ENCONTAR</h4>
@@ -68,7 +66,8 @@ const Home = () => {
 
                     <div className='right'>
                         <div className='right_img'>
-                            {/* <img src={hero} alt='Foto Pessoal' /> */}
+                            <p>Portifolio em construção</p>
+                            <img src={hero} alt='Foto Pessoal' />
                         </div>
                     </div>
                 </div>

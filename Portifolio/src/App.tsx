@@ -11,7 +11,6 @@ import "./global.css"
 const App = () => {
   return (
     <>
-
       <Partic />
       <Header />
       <Home />

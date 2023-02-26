@@ -61,7 +61,7 @@
 }
 
 .hero .left {
-    margin-right: 10%;
+    margin-right: 20%;
 }
 
 .hero .right {
@@ -76,14 +76,23 @@
     height: 580px;
     width: 510px;
     margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero .right_img img {
-    position: relative;
-    top: -20%;
-    right: 10%;
-    width: 510px;
+.hero .right_img p {
+    margin-bottom: 50px;
+    color: #6900a7;
+    border-bottom: 2px solid #ff01ff;
+    letter-spacing: 2px;
 
+}
+
+
+.hero .right_img img {
+    width: 500px;
 }
 
 @media (max-width: 768px) {
