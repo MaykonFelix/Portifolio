@@ -67,7 +67,7 @@ const Home = () => {
                     <div className='right'>
                         <div className='right_img'>
                             <p>Portifolio em construção</p>
-                            <img src={hero} alt='Foto Pessoal' />
+                            <img src={hero} alt='Imagem' />
                         </div>
                     </div>
                 </div>
