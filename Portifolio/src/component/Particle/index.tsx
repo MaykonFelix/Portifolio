@@ -5,6 +5,14 @@ import { loadFull } from "tsparticles";
 
 
 export default function Partic() {
+    let docTitle = document.title;
+    window.addEventListener('blur', () => {
+        document.title = "Obrigado a visita👋😁 _Maykon_";
+    });
+    window.addEventListener("focus", () => {
+        document.title = docTitle;
+    })
+
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
 
