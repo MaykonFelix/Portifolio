@@ -5,6 +5,9 @@ import Header from "./component/head/index"
 import Home from "./component/Home"
 import Footer from "./component/footer"
 import Partic from "./component/Particle"
+import WhatsApp from "./component/Features/WhatsApp"
+
+
 
 import "./global.css"
 
@@ -18,6 +21,7 @@ const App = () => {
       <Portfolio />
       <Resume />
       <Footer />
+      <WhatsApp />
     </>
   )
 }
