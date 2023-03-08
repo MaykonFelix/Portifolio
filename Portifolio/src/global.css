@@ -43,11 +43,18 @@ body::-webkit-scrollbar-thumb {
   height: 65px;
   width: 65px;
   cursor: pointer;
-  background: #34af23;
-  color: #FFF !important;
+  background: #33af234c;
   font-size: 2.3rem;
   border: 2px solid #f1f1f14f !important;
   animation: pulsar 1.2s ease-out 1s infinite alternate none running;
+}
+
+.btn-whatsapp:hover {
+  background: #33af23;
+}
+
+.btn-whatsapp a {
+  color: #005b1e !important;
 }
 
 a {
@@ -55,7 +62,7 @@ a {
 }
 
 .btn-whatsapp:hover a {
-  color: #0c5502 !important;
+  color: #ffffff !important;
 }
 
 @keyframes pulsar {
