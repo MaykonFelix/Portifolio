@@ -13,27 +13,72 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ecf0f3;
+  overflow: overlay;
 }
 
 body::-webkit-scrollbar {
-  width: 15px;
+  width: 13px;
 }
 
 
 
 body::-webkit-scrollbar-track {
-  background-color: #ecf0f3;
-  /* box-shadow: inset 0px 0px 2px 0px #7700ff; */
-  border-radius: 5px;
+  background-color: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
-  /*background-color: blue;*/
-  background-image: linear-gradient(#2b7cffc8, #cc00ff);
-  border-radius: 5px;
+  background-color: transparent;
+  background-image: linear-gradient(#1500ff, #ab00fbe2);
+  border-radius: 10px;
 }
 
 
+/* zzzzzzzzzzzzzzzzzz */
+.btn-whatsapp {
+  position: fixed;
+  z-index: 999;
+  outline: none;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  cursor: pointer;
+  background: #34af23;
+  color: #FFF !important;
+  font-size: 2.3rem;
+  border: 2px solid #f1f1f14f !important;
+  animation: pulsar 1.2s ease-out 1s infinite alternate none running;
+}
+
+a {
+  color: inherit;
+}
+
+.btn-whatsapp:hover a {
+  color: #0c5502 !important;
+}
+
+@keyframes pulsar {
+  0% {
+    height: 65px;
+    width: 65px;
+  }
+
+  50% {
+    height: 75px;
+    width: 75px;
+  }
+
+  100% {
+    height: 65px;
+    width: 65px;
+  }
+
+}
+
+
+/* zzzzzzzzzzzzzzzzzzz */
 .container {
   max-width: 95%;
   margin: auto;
