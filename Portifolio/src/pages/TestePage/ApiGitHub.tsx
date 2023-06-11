@@ -28,7 +28,7 @@ export const ApiGitHub = ({ login }: ApiGitHubProp) => {
 
       <div className={styles.container}>
         <div>
-          <pre>{JSON.stringify(data, null, 2)}</pre>
+          <pre className={styles.pre}>{JSON.stringify(data, null, 2)}</pre>
         </div>
         <div className={styles.avatar}>
           <img src={data.avatar_url} alt={data.login} />

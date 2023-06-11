@@ -4,13 +4,15 @@ import Features from "src/shared/components/Features/Features";
 import { Header } from "src/shared/components/head/index";
 import Home from "src/shared/components/Home";
 import Footer from "src/shared/components/footer";
-import Partic from "src/shared/components/Particle";
+import { ParticleDefault } from "src/shared/components/Particle/";
 import WhatsApp from "src/shared/components/Features/WhatsApp";
+import { NewTitle } from "src/shared/components/byTitle";
 
 export const AppRoute = () => {
   return (
     <>
-      <Partic />
+      <NewTitle />
+      <ParticleDefault />
       <Header />
       <Home />
       <Features />

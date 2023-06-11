@@ -13,6 +13,10 @@
   transition: 0.3s;
 }
 
+.pre {
+  font-size: 11px;
+}
+
 .navLink:hover {
   color: #333;
   background-color: #fff;
@@ -23,11 +27,12 @@
   height: 100vh;
 
   display: flex;
+  flex-wrap: wrap;
 
   align-items: center;
   justify-content: center;
 
-  gap: 15rem;
+  gap: 2rem;
 }
 
 .avatar {
