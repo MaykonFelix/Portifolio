@@ -14,7 +14,7 @@ const Home = () => {
                     <div className='left top'>
                         <h3>Bem vindo ao meu mundo</h3>
                         <h1>
-                            Ola, eu sou <span>Maykon</span>
+                            Ola, me chamo <span>Maykon</span>
                         </h1>
                         <h2>
                             um

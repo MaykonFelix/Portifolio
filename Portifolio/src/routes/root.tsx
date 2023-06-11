@@ -1,11 +1,11 @@
-import Portfolio from "../components/Portfolio/Portfolio";
-import Resume from "../components/Resume/Resume";
-import Features from "../components/Features/Features";
-import Header from "../components/head/index";
-import Home from "../components/Home";
-import Footer from "../components/footer";
-import Partic from "../components/Particle";
-import WhatsApp from "../components/Features/WhatsApp";
+import Portfolio from "src/shared/components/Portfolio/Portfolio";
+import Resume from "src/shared/components/Resume/Resume";
+import Features from "src/shared/components/Features/Features";
+import { Header } from "src/shared/components/head/index";
+import Home from "src/shared/components/Home";
+import Footer from "src/shared/components/footer";
+import Partic from "src/shared/components/Particle";
+import WhatsApp from "src/shared/components/Features/WhatsApp";
 
 export const AppRoute = () => {
   return (

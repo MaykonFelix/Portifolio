@@ -5,6 +5,7 @@ import { loadFull } from "tsparticles";
 
 
 export default function Partic() {
+    
     let docTitle = document.title;
     window.addEventListener('blur', () => {
         document.title = "Obrigado a visita👋😁 _Maykon_";
