@@ -16,7 +16,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #ecf0f3;
+  background-color: #fff;
   overflow: overlay;
 }
 
@@ -215,7 +215,7 @@ input {
 
 /*----------Footer---------*/
 footer {
-  margin: 5% 0 5% 0;
+  margin: 5% 0 2% 0;
 }
 
 footer p {

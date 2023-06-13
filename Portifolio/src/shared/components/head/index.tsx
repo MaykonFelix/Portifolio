@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import ScienceIcon from "@mui/icons-material/Science";
+
 import "./style.css";
 
 import LogCatColor from "../pic/LogCatColor.png";
@@ -43,10 +45,16 @@ export const Header = () => {
                 <a href="#resume">Resumo</a>
               </li>
               <li>
-                <Link to="/apigithub">Api GitHub</Link>
+                <Link to="/apigithub">Api</Link>
               </li>
               <li>
                 <Link to="/particle">Particle</Link>
+              </li>
+              <li>
+                <Link to="/playGround">
+                  <ScienceIcon />
+                  Playground
+                </Link>
               </li>
             </ul>
 
