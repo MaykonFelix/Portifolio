@@ -1,3 +1,4 @@
-export * from "./TestePage/ApiGitHub"
+export * from "./TestePage/ApiGitHub";
 export * from "./TesteParticle/Particle";
-export * from "./Playground"
+export * from "./Playground";
+export * from "./Home";

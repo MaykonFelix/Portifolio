@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
-  --Blue-Sky: #025B93;
+  --Blue-Sky: #025b93;
+  --white: #fff;
+  --Pink-600: #ff014f;
 }
 
 * {
@@ -23,8 +25,6 @@ body {
 body::-webkit-scrollbar {
   width: 13px;
 }
-
-
 
 body::-webkit-scrollbar-track {
   background-color: transparent;
@@ -84,7 +84,6 @@ a {
     height: 65px;
     width: 65px;
   }
-
 }
 
 /* WhatsApp - End */

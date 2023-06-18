@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import ScienceIcon from "@mui/icons-material/Science";
+import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 
 import "./style.css";
 
@@ -33,8 +34,9 @@ export const Header = () => {
               onClick={() => setMobile(false)}
             >
               <li>
-                <a href="#home">home</a>
+                <Link to="/">home</Link>
               </li>
+
               <li>
                 <a href="#features">Conhecimentos</a>
               </li>
@@ -57,6 +59,9 @@ export const Header = () => {
                 </Link>
               </li>
             </ul>
+            <a className="up" href="#home">
+              <ArrowDropUpIcon />
+            </a>
 
             <button className="toggle" onClick={() => setMobile(!Mobile)}>
               {Mobile ? (
