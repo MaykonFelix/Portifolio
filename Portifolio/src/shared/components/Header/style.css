@@ -3,7 +3,7 @@
 }
 
 header {
-  height: 10vh;
+  height: 7vh;
 }
 
 header .container {
@@ -14,7 +14,6 @@ header ul li {
   margin-left: 18px;
   padding-left: 10px;
   border-left: 1px solid #ff014d60;
-
 }
 
 header ul li a {
@@ -44,12 +43,10 @@ header ul li a:hover {
   z-index: 1000;
   width: 100%;
   background-color: #fff;
-  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.4);
-  transition: 0.3s ease-out;
+  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
-
   header ul {
     padding-top: 30px;
   }

@@ -11,7 +11,7 @@ export const Hero = () => {
     <>
       <section id="home" className="hero">
         <div className="container f_flex">
-          <div className="left top">
+          <div className="left">
             <h3>Bem vindo</h3>
             <h1>
               Ola, me chamo <span>Maykon</span>

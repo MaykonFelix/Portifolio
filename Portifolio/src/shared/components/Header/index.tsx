@@ -47,9 +47,6 @@ export const Header = () => {
               <a href="#resume">Resumo</a>
             </li>
             <li>
-              <Link to="/apigithub">Api</Link>
-            </li>
-            <li>
               <Link to="/particle">Particle</Link>
             </li>
             <li>

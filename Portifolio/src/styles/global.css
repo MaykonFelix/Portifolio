@@ -34,6 +34,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+.top {
+  margin: 100px auto;
+}
+
 .container {
   max-width: 80%;
   margin: auto;
@@ -103,10 +107,6 @@ button {
   width: 50%;
 }
 
-.top {
-  margin-top: 80px;
-}
-
 .mtop {
   margin-top: 40px;
 }
@@ -121,7 +121,7 @@ button {
 }
 
 .heading h1 {
-  font-size: 60px;
+  font-size: 40px;
   color: #3c3e41;
 }
 
@@ -160,11 +160,10 @@ input {
 /*----------Footer---------*/
 footer {
   align-self: flex-end;
-
 }
 
-footer p {
-  margin-top: 5px;
+footer {
+  margin: 30px auto;
 }
 
 /*----------Footer---------*/
