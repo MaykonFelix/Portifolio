@@ -1,6 +1,6 @@
 import "./style.css";
 
-export const Footer = () => {
+export const FooterNew = () => {
   return (
     <>
       <footer>

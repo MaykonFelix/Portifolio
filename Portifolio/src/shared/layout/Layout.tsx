@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Header, Footer, WhatsApp } from "src/shared/components/";
+import { Header, FooterNew, WhatsApp } from "src/shared/components/";
 import { NewTitle } from "src/shared/components/byTitle";
 
 export const Layout = () => {
@@ -8,7 +8,7 @@ export const Layout = () => {
       <NewTitle />
       <Header />
       <Outlet />
-      <Footer />
+      <FooterNew />
       <WhatsApp />
     </>
   );

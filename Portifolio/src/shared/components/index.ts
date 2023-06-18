@@ -1,5 +1,5 @@
 export * from "./Header";
 export * from "./Hero";
-export * from "./Footer/index";
+export * from "./FooterNew";
 export * from "./WhatsApp";
 export * from "./Particle";
