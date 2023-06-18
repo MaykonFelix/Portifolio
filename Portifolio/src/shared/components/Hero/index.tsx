@@ -9,7 +9,7 @@ import { Typewriter } from "react-simple-typewriter";
 export const Hero = () => {
   return (
     <>
-      <section className="hero">
+      <section id="home" className="hero">
         <div className="container f_flex">
           <div className="left top">
             <h3>Bem vindo</h3>
@@ -25,8 +25,8 @@ export const Hero = () => {
                   cursor
                   cursorStyle="|"
                   typeSpeed={70}
-                  deleteSpeed={30}
-                  delaySpeed={1500}
+                  deleteSpeed={50}
+                  delaySpeed={3000}
                 />
               </span>
             </h2>
@@ -95,7 +95,9 @@ export const Hero = () => {
 
           <div className="right">
             <div className="right_img">
-              <p>Portifolio em construção</p>
+              <p>
+                <span>Status:</span> Desenvolvimento Junior
+              </p>
               <img src={Construction} alt="Imagem" />
             </div>
           </div>
@@ -104,4 +106,3 @@ export const Hero = () => {
     </>
   );
 };
-

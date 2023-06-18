@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
 :root {
   --Blue-Sky: #025b93;
   --white: #fff;
   --Pink-600: #ff014f;
+  font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -17,7 +16,6 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   background-color: #fff;
   overflow: overlay;
 }
@@ -36,60 +34,8 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-/* -- WhatsApp - Start -- */
-.btn-whatsapp {
-  position: fixed;
-  z-index: 999;
-  outline: none;
-  bottom: 30px;
-  right: 30px;
-  border-radius: 50%;
-  height: 65px;
-  width: 65px;
-  cursor: pointer;
-  background: #33af234c;
-  font-size: 2.3rem;
-  border: 2px solid #f1f1f14f !important;
-  animation: pulsar 1.2s ease-out 1s infinite alternate none running;
-}
-
-.btn-whatsapp:hover {
-  background: #33af23;
-}
-
-.btn-whatsapp a {
-  color: #005b1e !important;
-}
-
-a {
-  color: inherit;
-}
-
-.btn-whatsapp:hover a {
-  color: #ffffff !important;
-}
-
-@keyframes pulsar {
-  0% {
-    height: 65px;
-    width: 65px;
-  }
-
-  50% {
-    height: 75px;
-    width: 75px;
-  }
-
-  100% {
-    height: 65px;
-    width: 65px;
-  }
-}
-
-/* WhatsApp - End */
-
 .container {
-  max-width: 95%;
+  max-width: 80%;
   margin: auto;
 }
 
@@ -168,7 +114,6 @@ button {
 .heading {
   margin: 50px 0 50px 0;
 }
-
 .heading h4 {
   color: #ff014f;
   letter-spacing: 2px;
@@ -214,11 +159,12 @@ input {
 
 /*----------Footer---------*/
 footer {
-  margin: 5% 0 2% 0;
+  align-self: flex-end;
+
 }
 
 footer p {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 /*----------Footer---------*/

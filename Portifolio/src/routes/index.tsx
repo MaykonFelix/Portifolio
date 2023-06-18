@@ -5,8 +5,8 @@ import {
   Route,
 } from "react-router-dom";
 
-import { ApiGitHub, Particle, Playground, Home } from "src/pages";
 import { Layout } from "src/shared/layout";
+import { ApiGitHub, Particle, Playground, Home } from "src/pages";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

@@ -1,7 +1,7 @@
 import Portfolio from "src/shared/components/Portfolio/Portfolio";
 import Resume from "src/shared/components/Resume/Resume";
 import Features from "src/shared/components/Features/Features";
-import { Hero } from "src/shared/components/Hero";
+import { Hero, ParticleDefault } from "src/shared/components/";
 
 export const Home = () => {
   return (
@@ -10,6 +10,7 @@ export const Home = () => {
       <Features />
       <Portfolio />
       <Resume />
+      <ParticleDefault />
     </>
   );
 };

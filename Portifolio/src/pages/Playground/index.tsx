@@ -13,11 +13,10 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
-const pages = ["Products", "Pricing", "Blog"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const pages = ["Home","Api's", "Lab's", "PLAYGROUND"];
+const settings = ["Linkedin", "GitHub", "Dashboard", "Logout"];
 
 export const Playground = () => {
-
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -42,8 +41,12 @@ export const Playground = () => {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
+
+      <Container maxWidth="lg">
+
+        <Toolbar disableGutters >
+
+
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
@@ -99,6 +102,7 @@ export const Playground = () => {
               ))}
             </Menu>
           </Box>
+
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
@@ -116,7 +120,7 @@ export const Playground = () => {
               textDecoration: "none",
             }}
           >
-            LOGO
+            MAYKON
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
@@ -133,7 +137,7 @@ export const Playground = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src="https://github.com/MaykonFelix.png" />
               </IconButton>
             </Tooltip>
             <Menu
