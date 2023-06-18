@@ -1,29 +1,5 @@
-import Portfolio from "./component/Portfolio/Portfolio"
-import Resume from "./component/Resume/Resume"
-import Features from "./component/Features/Features"
-import Header from "./component/head/index"
-import Home from "./component/Home"
-import Footer from "./component/footer"
-import Partic from "./component/Particle"
-import WhatsApp from "./component/Features/WhatsApp"
+import { AppRoutes } from "./routes";
 
-
-
-import "./global.css"
-
-const App = () => {
-  return (
-    <>
-      <Partic />
-      <Header />
-      <Home />
-      <Features />
-      <Portfolio />
-      <Resume />
-      <Footer />
-      <WhatsApp />
-    </>
-  )
-}
-
-export default App
+export const App = () => {
+  return <AppRoutes />;
+};

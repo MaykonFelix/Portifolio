@@ -1,0 +1,68 @@
+.Resume .heading h1 {
+  font-size: 40px;
+}
+
+.Resume .content {
+  max-width: 85%;
+  margin: auto;
+}
+
+.Resume .box {
+  padding: 40px;
+}
+
+.Resume hr {
+  margin: 20px 0 20px 0;
+  border: 1px solid #e3e9ed;
+  background-color: #e3e9ed;
+}
+
+.Resume .rate .btn_shadow {
+  color: #ff014f;
+  padding: 15px 30px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.Resume p {
+  font-size: 13px;
+  transition: 0.5s;
+}
+
+.Resume .box {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.Resume .btn_shadow:hover {
+  transform: translate(0);
+}
+
+.Resume .box:hover .btn_shadow {
+  background: #ff3a75;
+  box-shadow: none;
+  color: white;
+}
+
+.Resume .box:hover p {
+  color: white;
+}
+
+.Resume .content-section {
+  position: relative;
+}
+
+.Resume .left {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .Resume .d_flex {
+    flex-direction: column;
+  }
+
+  .Resume .left::after {
+    top: 14%;
+    height: 105vh;
+  }
+}

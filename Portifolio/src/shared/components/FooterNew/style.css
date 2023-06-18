@@ -1,0 +1,9 @@
+footer span {
+  font-size: 0.8rem;
+  background-image: linear-gradient(90deg, #0586ff, #ff05de);
+  font-weight: 500;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.02rem;
+}
+
