@@ -1,9 +1,4 @@
-import { Link } from "react-router-dom";
-
-import { Button } from "@mui/material";
-
 import { useFetch } from "src/shared/Hooks/useFetch";
-
 import styles from "./ApiGitHub.module.css";
 
 interface ApiGitHubProp {
@@ -22,10 +17,6 @@ export const ApiGitHub = ({ login }: ApiGitHubProp) => {
 
   return (
     <div>
-      <Link className={styles.navLink} to="/">
-        Home
-      </Link>
-
       <div className={styles.container}>
         <div>
           <pre className={styles.pre}>{JSON.stringify(data, null, 2)}</pre>

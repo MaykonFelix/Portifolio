@@ -1,16 +1,10 @@
-import { Link } from "react-router-dom";
-
 import styles from "./Particle.module.css";
-
 import { ParticleTest } from "src/shared/components/Particle/";
 
 export const Particle = () => {
   return (
     <>
       <div className={styles.layout}>
-        <Link className={styles.navLink} to="/">
-          Home
-        </Link>
         <ParticleTest />
         <div>Particle</div>
         <img
