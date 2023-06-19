@@ -1,34 +1,24 @@
 /* -- WhatsApp - Start -- */
 .btn-whatsapp {
+
   position: fixed;
   z-index: 999;
   outline: none;
+
   bottom: 30px;
   right: 30px;
+
   border-radius: 50%;
+
   height: 65px;
   width: 65px;
   cursor: pointer;
-  background: #33af234c;
-  font-size: 2.3rem;
-  border: 2px solid #f1f1f14f !important;
+
   animation: pulsar 1.2s ease-out 1s infinite alternate none running;
 }
 
 .btn-whatsapp:hover {
   background: #33af23;
-}
-
-.btn-whatsapp a {
-  color: #005b1e !important;
-}
-
-a {
-  color: inherit;
-}
-
-.btn-whatsapp:hover a {
-  color: #ffffff !important;
 }
 
 @keyframes pulsar {
@@ -47,5 +37,4 @@ a {
     width: 65px;
   }
 }
-
 /* WhatsApp - End */

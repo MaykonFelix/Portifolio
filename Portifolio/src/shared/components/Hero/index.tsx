@@ -4,7 +4,14 @@ import ReactLogo from "../pic/ReactLogo.png";
 import NodeLogo from "../pic/NodeLogo.png";
 import TSLogo from "../pic/TSLogo.png";
 import MySQLogo from "../pic/MySQLogo.png";
+
 import { Typewriter } from "react-simple-typewriter";
+
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+
 
 export const Hero = () => {
   return (
@@ -45,7 +52,7 @@ export const Hero = () => {
                 <div className="button">
                   <a href="https://github.com/MaykonFelix" target="_blank">
                     <button className="btn_shadow">
-                      <i className="fab fa-github"></i>
+                      <GitHubIcon />
                     </button>
                   </a>
                   <a
@@ -53,7 +60,7 @@ export const Hero = () => {
                     target="_blank"
                   >
                     <button className="btn_shadow">
-                      <i className="fab fa-linkedin-in"></i>
+                      <LinkedInIcon color="primary" />
                     </button>
                   </a>
                   <a
@@ -61,7 +68,7 @@ export const Hero = () => {
                     target="_blank"
                   >
                     <button className="btn_shadow">
-                      <i className="fab fa-facebook-f"></i>
+                      <FacebookIcon color="primary" />
                     </button>
                   </a>
                   <a
@@ -69,7 +76,7 @@ export const Hero = () => {
                     target="_blank"
                   >
                     <button className="btn_shadow">
-                      <i className="fab fa-instagram"></i>
+                      <InstagramIcon  />
                     </button>
                   </a>
                 </div>

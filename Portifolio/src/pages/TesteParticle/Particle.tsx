@@ -1,13 +1,20 @@
 import styles from "./Particle.module.css";
 import { ParticleTest } from "src/shared/components/Particle/";
+import { motion } from "framer-motion";
 
 export const Particle = () => {
   return (
     <>
-      <div className={styles.layout}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+        className={styles.layout}
+      >
         <ParticleTest />
         <div>Particle Teste</div>
-      </div>
+      </motion.div>
     </>
   );
 };
