@@ -6,12 +6,12 @@ import TSLogo from "../pic/TSLogo.png";
 import MySQLogo from "../pic/MySQLogo.png";
 
 import { Typewriter } from "react-simple-typewriter";
+import { motion } from "framer-motion";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-
 
 export const Hero = () => {
   return (
@@ -55,6 +55,7 @@ export const Hero = () => {
                       <GitHubIcon />
                     </button>
                   </a>
+
                   <a
                     href="https://www.linkedin.com/in/maykonfelixwebdeveloper/"
                     target="_blank"
@@ -76,7 +77,7 @@ export const Hero = () => {
                     target="_blank"
                   >
                     <button className="btn_shadow">
-                      <InstagramIcon  />
+                      <InstagramIcon />
                     </button>
                   </a>
                 </div>
