@@ -1,0 +1,14 @@
+.particles {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+}
+
+.particles #tsparticles {
+  border: 5px solid blue;
+}
+
+.xxxx {
+  width: 500px !important;
+  height: 500px !important;
+}
