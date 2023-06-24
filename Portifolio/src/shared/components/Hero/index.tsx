@@ -103,7 +103,7 @@ export const Hero = () => {
 
           <div className="right">
             <div className="right_img">
-              <p>#Stop Never Learning</p>
+              <p>#NeverStopLearning 🚀</p>
               <img src={Construction} alt="Imagem" />
             </div>
           </div>
