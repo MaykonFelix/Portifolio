@@ -103,9 +103,7 @@ export const Hero = () => {
 
           <div className="right">
             <div className="right_img">
-              <p>
-                <span>Status:</span> Desenvolvimento Junior
-              </p>
+              <p>#Stop Never Learning</p>
               <img src={Construction} alt="Imagem" />
             </div>
           </div>

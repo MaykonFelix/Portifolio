@@ -14,8 +14,10 @@ export const Home = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
-      {/* <ParticleDefault /> */}
-      {/* <div className={styles.particles}></div> */}
+      <div className={styles.particles}>
+        <ParticleDefault />
+        <h1 className={styles.TextHero}>Bem vindo</h1>
+      </div>
       <Hero />
       <Features />
       <Portfolio />
