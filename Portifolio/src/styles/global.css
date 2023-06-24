@@ -17,11 +17,11 @@ html {
 
 body {
   background-color: #fff;
-  overflow: overlay;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
-  width: 13px;
+  width: 8px;
 }
 
 body::-webkit-scrollbar-track {
@@ -29,9 +29,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: transparent;
-  background-image: linear-gradient(#1500ff, #ab00fbe2);
-  border-radius: 10px;
+  background-image: linear-gradient(#ff003c00, #ff0088, #8800ff);
+  border-radius: 5px;
+
+  box-shadow: inset 2px 0px 6px 1px rgba(0, 187, 255, 0.642);
+  border: none;
+  outline: none;
 }
 
 .top {
@@ -83,8 +86,6 @@ button {
   color: #000;
   transition: 0.5s;
 }
-
-
 
 .btn_shadow {
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
