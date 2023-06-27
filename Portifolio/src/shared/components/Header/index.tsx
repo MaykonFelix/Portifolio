@@ -51,6 +51,9 @@ export const Header = () => {
               <Link to="/particle">Particle</Link>
             </li>
             <li>
+              <Link to="/framerMotion">Framer Motion</Link>
+            </li>
+            <li>
               <Link to="/playGround">Playground</Link>
             </li>
           </ul>
