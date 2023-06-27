@@ -3,7 +3,13 @@
 }
 
 header {
-  height: 7vh;
+  height: 65px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: hsla(0, 0%, 100%, 0.8);
+  transform: translateZ(0);
+  backdrop-filter: saturate(180%) blur(5px);
 }
 
 header .container {
@@ -34,16 +40,6 @@ header ul li a:hover {
 
 .open {
   display: none;
-}
-
-.header.active {
-  height: 7vh;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -80,12 +76,13 @@ header ul li a:hover {
   .close,
   .open {
     position: absolute;
-    top: 35px;
+    top: 25px;
     right: 20px;
     color: #ff014f;
     display: block;
     font-size: 25px;
     z-index: 999;
+    transition: 0.3s;
   }
 
   .close {
@@ -111,9 +108,5 @@ header ul li a:hover {
     width: 60px;
     height: 60px;
     line-height: 60px;
-  }
-
-  .header.active {
-    height: 10vh;
   }
 }

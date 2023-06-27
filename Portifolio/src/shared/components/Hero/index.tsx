@@ -1,4 +1,5 @@
 import "./style.css";
+
 import Construction from "../pic/Construction.png";
 import ReactLogo from "../pic/ReactLogo.png";
 import NodeLogo from "../pic/NodeLogo.png";
@@ -6,7 +7,6 @@ import TSLogo from "../pic/TSLogo.png";
 import MySQLogo from "../pic/MySQLogo.png";
 
 import { Typewriter } from "react-simple-typewriter";
-import { motion } from "framer-motion";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
