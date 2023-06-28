@@ -29,23 +29,13 @@ export const Header = () => {
           </Typography>
         </Stack>
 
-        <div className="navlink">
+        <nav className="navlink">
           <ul
             className={Mobile ? "nav-links-mobile" : "link f_flex uppercase"}
             onClick={() => setMobile(false)}
           >
             <li>
               <Link to="/">home</Link>
-            </li>
-
-            <li>
-              <a href="#features">Conhecimentos</a>
-            </li>
-            <li>
-              <a href="#portfolio">Portfólio</a>
-            </li>
-            <li>
-              <a href="#resume">Resumo</a>
             </li>
             <li>
               <Link to="/particle">Particle</Link>
@@ -65,7 +55,7 @@ export const Header = () => {
               <i className="fas fa-bars open"></i>
             )}
           </button>
-        </div>
+        </nav>
       </div>
     </header>
   );
