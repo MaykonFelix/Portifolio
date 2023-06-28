@@ -21,7 +21,7 @@
 }
 
 .icons {
-  background: #f3f3f4;
+
   width: 3rem;
   height: 3rem;
 
@@ -37,9 +37,7 @@
 
   border-radius: 30px;
 }
-.icons:hover {
-  background-color: var(--background-color);
-}
+
 
 .text {
   transition-duration: 0.5s;
