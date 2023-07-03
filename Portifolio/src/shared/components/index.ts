@@ -4,3 +4,4 @@ export * from "./FooterNew";
 export * from "./WhatsApp";
 export * from "./Particle";
 export * from "./MenuItems";
+export * from "./Konva";

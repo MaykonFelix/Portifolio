@@ -1,6 +1,7 @@
 import styles from "./styles.module.css";
 import { motion, useMotionValue, useTransform } from "framer-motion";
-import ControlCameraIcon from "@mui/icons-material/ControlCamera";
+
+import { KonvaTeste } from "src/shared/components";
 
 export const Playground = () => {
   const x = useMotionValue(0);
@@ -14,9 +15,10 @@ export const Playground = () => {
       className={styles.background}
     >
       <div className="container">
+        <h1>PlayGround</h1>
+        <h2>Teste Konva</h2>
         <motion.div className={styles.principal}>
-          <h1>PlayGround</h1>
-          <h2>Testes</h2>
+          <KonvaTeste />
         </motion.div>
       </div>
     </motion.div>
