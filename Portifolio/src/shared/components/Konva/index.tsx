@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Stage, Layer, Star, Text } from "react-konva";
 
 function generateShapes() {
-  return [...Array(5)].map((_, i) => ({
+  return [...Array(10)].map((_, i) => ({
     id: i.toString(),
     x: Math.random() * window.innerWidth,
     y: Math.random() * window.innerHeight,
