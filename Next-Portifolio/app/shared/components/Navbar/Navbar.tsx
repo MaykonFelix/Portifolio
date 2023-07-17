@@ -9,7 +9,7 @@ export const Navbar = () => {
         {Links.map((items) => {
           return (
             <li key={items.id} tabIndex={items.id}>
-              <Link href={items.path} className="p-1 font-boldtracking-tighter">
+              <Link href={items.path} className="p-1 font-bold tracking-tighter">
                 {items.name}
               </Link>
             </li>
