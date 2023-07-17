@@ -1,24 +1,25 @@
-import { Open_Sans } from "next/font/google";
-import NextTopLoader from "nextjs-toploader";
+// eslint-disable-next-line camelcase
+import { Open_Sans } from 'next/font/google'
+import NextTopLoader from 'nextjs-toploader'
 
-import type { Metadata } from "next";
-import { Header } from "@/shared/components/index";
+import type { Metadata } from 'next'
+import { Header } from '@/shared/components/index'
 
-import "./styles/globals.css";
+import './styles/globals.css'
 
 const OpenSans = Open_Sans({
-  weight: ["300", "400", "500", "700", "800"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-});
+  weight: ['300', '400', '500', '700', '800'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
-  title: "Home | Maykon",
-  description: "Portifolio Maykon",
-};
+  title: 'Home | Maykon',
+  description: 'Portifolio Maykon',
+}
 
 interface RootLayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -32,5 +33,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </main>
       </body>
     </html>
-  );
+  )
 }

@@ -1,5 +1,6 @@
-import { Avatar } from "@mui/material";
-import { Navbar } from "@/shared/components/index";
+import { Avatar } from '@mui/material'
+
+import { Navbar } from '@/shared/components/index'
 
 export const Header = () => {
   return (
@@ -8,10 +9,10 @@ export const Header = () => {
         <Avatar
           alt="Maykon Felix"
           src="http://github.com/MaykonFelix.png"
-          className="mr-2 my-2"
+          className="mr-2 my-2 w-12 h-12 border-2 border-slate-400 duration-100 hover:border-rose-700"
         />
         <Navbar />
       </div>
     </header>
-  );
-};
+  )
+}
