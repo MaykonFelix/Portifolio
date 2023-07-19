@@ -1,9 +1,8 @@
-// eslint-disable-next-line camelcase
 import { Open_Sans } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
 
 import type { Metadata } from 'next'
-import { Header } from '@/shared/components/index'
+import { Footer, Header } from '@/shared/components/index'
 
 import './styles/globals.css'
 
@@ -31,6 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <main className="h-screen max-w-7xl ml-auto mr-auto pl-7 pr-7 mt-2 bg-slate-100 ">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   )
