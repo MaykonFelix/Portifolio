@@ -29,9 +29,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Header />
         <main className=" h-screen max-w-7xl ml-auto mr-auto pl-7 pr-7 mt-2 bg-slate-100 ">
           {children}
-          <button className="p-3 shadow-xl select2-dropdown">
-            teste Pretier Tailwind
-          </button>
         </main>
         <Footer />
       </body>
