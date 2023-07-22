@@ -1,0 +1,40 @@
+/* -- WhatsApp - Start -- */
+.btn-whatsapp {
+
+  position: fixed;
+  z-index: 999;
+  outline: none;
+
+  bottom: 30px;
+  right: 30px;
+
+  border-radius: 50%;
+
+  height: 65px;
+  width: 65px;
+  cursor: pointer;
+
+  animation: pulsar 1.2s ease-out 1s infinite alternate none running;
+}
+
+.btn-whatsapp:hover {
+  background: #33af23;
+}
+
+@keyframes pulsar {
+  0% {
+    height: 65px;
+    width: 65px;
+  }
+
+  50% {
+    height: 75px;
+    width: 75px;
+  }
+
+  100% {
+    height: 65px;
+    width: 65px;
+  }
+}
+/* WhatsApp - End */

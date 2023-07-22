@@ -2,7 +2,7 @@ import { Open_Sans } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
 
 import type { Metadata } from 'next'
-import { Footer, Header } from '@/shared/components/index'
+import { Footer, Header, WhatsApp, Particle } from '@/shared/components/index'
 
 import './styles/globals.css'
 
@@ -27,9 +27,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body suppressHydrationWarning={true} className={OpenSans.className}>
         <NextTopLoader color="#FE0078" height={4} showSpinner />
         <Header />
+        <Particle />
         <main className=" h-screen max-w-7xl ml-auto mr-auto pl-7 pr-7 mt-2 bg-slate-100 ">
           {children}
         </main>
+        <WhatsApp />
         <Footer />
       </body>
     </html>
