@@ -5,6 +5,8 @@ export const Footer = () => {
         Muito Obrigado pela visita, no momento estou em construção e provavel
         que na proxima vez que você voltar a sua experiencia vai ser diferente.
       </span>
+      
+      <div className="hover:opacity-75 opacity-50 hover:scale-150 scale-125"></div>
 
       <p className="m-2 font-normal">
         Designed & Developed by Maykon Felix © 2023.
