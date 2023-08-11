@@ -7,10 +7,10 @@ export const Navbar = () => {
 			<ul className="flex gap-1">
 				{Links.map(items => {
 					return (
-						<li key={items.id}  tabIndex={items.id}>
+						<li key={items.id} tabIndex={items.id}>
 							<Link
 								href={items.path}
-								className="px-4 font-medium shadow tracking-tighter duration-500 border-rose-600 text-rose-600 hover:text-rose-800 hover:bg-red-200 rounded"
+								className="px-4 font-medium shadow tracking-tighter duration-500 border-rose-600 text-rose-600 hover:text-rose-800 hover:bg-red-200 rounded-full"
 							>
 								{items.name}
 							</Link>

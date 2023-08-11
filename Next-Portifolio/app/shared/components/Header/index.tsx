@@ -12,7 +12,6 @@ export const Header = () => {
 						className="mr-2 my-2 w-10 h-10 duration-300 shadow shadow-pink-500 hover:scale-110 cursor-pointer hover:drop-shadow-lg"
 					/>
 				</Tooltip>
-
 				<Navbar />
 			</div>
 		</header>

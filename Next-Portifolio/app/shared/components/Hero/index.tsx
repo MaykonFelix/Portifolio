@@ -30,7 +30,7 @@ export const Hero = () => {
 						WEB
 					</h1>
 					<div className="flex items-end">
-						<div className="cursor-pointer">
+						<div className="cursor-pointer duration-300 hover:text-rose-500">
 							<Tooltip title="GitHub">
 								<GitHubIcon sx={{ fontSize: 70 }} />
 							</Tooltip>
@@ -52,8 +52,8 @@ export const Hero = () => {
 				</h1>
 				<div className="flex self-end">
 					<p className="text-sm text-slate-500 font-medium tracking-widest leading-normal  max-w-sm">
-						Mais de 2 anos de experiencia em desenvolvimento web, atualmente com 34
-						anos trabalhando em desenvolvimento front end.
+						Mais de 2 anos de experiencia em desenvolvimento web, atualmente com
+						34 anos trabalhando em desenvolvimento front end.
 					</p>
 				</div>
 			</div>
