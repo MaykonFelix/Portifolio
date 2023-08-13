@@ -10,7 +10,7 @@ export const Hero = () => {
 	return (
 		<div className="flex justify-center">
 			<div className="flex flex-col">
-				<h3 className="text-xl font-bold text-black translate-y-4">
+				<h3 className="text-xl font-bold translate-y-4">
 					<Typewriter
 						words={[
 							'Olá me chamo Maykon 👋',
@@ -26,7 +26,8 @@ export const Hero = () => {
 					/>
 				</h3>
 				<div className="flex ">
-					<h1 className="font-extrabold text-[14.5rem] text-black leading-[0.9]">
+					{/* <h1 className="font-extrabold text-[14.5rem] text-slate-600 leading-[0.9] "> */}
+					<h1 className="font-extrabold text-[14.5rem] leading-[0.9] ">
 						WEB
 					</h1>
 					<div className="flex items-end">
@@ -47,13 +48,13 @@ export const Hero = () => {
 						</div>
 					</div>
 				</div>
-				<h1 className="pb-2 pt-2 font-extrabold text-9xl text-slate-500">
+				<h1 className="pb-2 pt-2 font-extrabold text-9xl bg-gradient-to-r from-cyan-500 to-fuchsia-600 bg-clip-text text-transparent ">
 					DEVELOPER
 				</h1>
 				<div className="flex self-end">
 					<p className="text-sm text-slate-500 font-medium tracking-widest leading-normal  max-w-sm">
 						Mais de 2 anos de experiencia em desenvolvimento web, atualmente com
-						34 anos trabalhando em desenvolvimento front end.
+						34 anos trabalhando com desenvolvimento front end.
 					</p>
 				</div>
 			</div>
