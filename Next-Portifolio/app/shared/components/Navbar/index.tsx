@@ -10,7 +10,7 @@ export const Navbar = () => {
 						<li key={items.id} tabIndex={items.id}>
 							<Link
 								href={items.path}
-								className="px-4 font-medium shadow tracking-tighter duration-500 border-rose-600 text-rose-600 hover:text-rose-800 hover:bg-red-200 rounded-full"
+								className="px-4 text-lg font-medium  tracking-tighter duration-300  text-rose-600 hover:text-zinc-600 "
 							>
 								{items.name}
 							</Link>
