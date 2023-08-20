@@ -26,21 +26,32 @@ export const Hero = () => {
 					/>
 				</h3>
 				<div className="flex ">
-					{/* <h1 className="font-extrabold text-[14.5rem] text-slate-600 leading-[0.9] "> */}
-					<h1 className="font-extrabold text-[14.5rem] leading-[0.9] ">
-						WEB
-					</h1>
+					<h1 className="font-extrabold text-[14.5rem] leading-[0.9] ">WEB</h1>
 					<div className="flex items-end">
-						<div className="cursor-pointer duration-300 hover:text-rose-500">
+						<a
+							href="https://github.com/MaykonFelix"
+							target="_blank"
+							className="cursor-pointer duration-300 hover:text-rose-500"
+						>
 							<Tooltip title="GitHub">
-								<GitHubIcon sx={{ fontSize: 70 }} />
+								<GitHubIcon
+									className="text-slate-700 duration-500 hover:text-slate-950 "
+									sx={{ fontSize: 70 }}
+								/>
 							</Tooltip>
-						</div>
-						<div className="cursor-pointer">
+						</a>
+						<a
+							href="https://www.linkedin.com/in/maykonfelixwebdeveloper/"
+							target="_blank"
+							className="cursor-pointer"
+						>
 							<Tooltip title="Linkedin">
-								<LinkedInIcon sx={{ fontSize: 70 }} />
+								<LinkedInIcon
+									className="text-blue-500 hover:text-blue-800"
+									sx={{ fontSize: 70 }}
+								/>
 							</Tooltip>
-						</div>
+						</a>
 						<div className="cursor-pointer">
 							<Tooltip title="Curriculo">
 								<DescriptionIcon sx={{ fontSize: 70 }} />
@@ -48,9 +59,14 @@ export const Hero = () => {
 						</div>
 					</div>
 				</div>
-				<h1 className="pb-2 pt-2 font-extrabold text-9xl bg-gradient-to-r from-cyan-500 to-fuchsia-600 bg-clip-text text-transparent ">
-					DEVELOPER
-				</h1>
+				<div className="flex">
+					<h1 className="pb-2 pt-2 font-extrabold text-9xl bg-gradient-to-r from-cyan-500 to-indigo-700 bg-clip-text text-transparent !drop-shadow-[-100px_0px_80px_#0e7490]">
+						DEVE
+					</h1>
+					<h1 className="pb-2 pt-2 font-extrabold text-9xl bg-gradient-to-r from-indigo-700 to-fuchsia-600 bg-clip-text text-transparent !drop-shadow-[100px_0px_80px_#c026d3]">
+						LOPER
+					</h1>
+				</div>
 				<div className="flex self-end">
 					<p className="text-sm text-slate-500 font-medium tracking-widest leading-normal  max-w-sm">
 						Mais de 2 anos de experiencia em desenvolvimento web, atualmente com
