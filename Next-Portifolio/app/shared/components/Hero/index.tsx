@@ -8,7 +8,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 export const Hero = () => {
 	return (
-		<div className="flex justify-center">
+		<div className="flex justify-center select-none">
 			<div className="flex flex-col">
 				<h3 className="text-xl font-bold translate-y-4">
 					<Typewriter
