@@ -1,7 +1,13 @@
+
 import { Avatar, Tooltip } from '@mui/material'
 import { Navbar } from '@/shared/components/index'
+import { useEffect } from 'react'
+import { NewTitle } from '@/shared/utils/Title'
 
 export const Header = () => {
+
+		// NewTitle()
+
 	return (
 		<header className="z-10 sticky backdrop-blur-sm top-0 shadow">
 			<div className="max-w-7xl  ml-auto mr-auto pl-7 pr-7 flex items-center mt-2">

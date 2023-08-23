@@ -1,4 +1,4 @@
-'use client'
+
 
 export const NewTitle = () => {
 	const NewTitle = document.title
@@ -8,5 +8,5 @@ export const NewTitle = () => {
 	window.addEventListener('focus', () => {
 		document.title = NewTitle
 	})
-	return null
+
 }

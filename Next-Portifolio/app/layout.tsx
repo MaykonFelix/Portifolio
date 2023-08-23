@@ -3,9 +3,10 @@ import NextTopLoader from 'nextjs-toploader'
 
 import type { Metadata } from 'next'
 import { Footer, Header, WhatsApp, MenuItems } from '@/shared/components/index'
-import { NewTitle } from '@/shared/utils/Title'
+
 
 import './styles/globals.css'
+
 
 const OpenSans = Open_Sans({
 	weight: ['300', '400', '500', '700', '800'],
@@ -23,11 +24,12 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
+
 	return (
 		<html lang="pt-br">
 			<body suppressHydrationWarning={true} className={OpenSans.className}>
 				<NextTopLoader color="#FE0078" height={4} showSpinner />
-				<NewTitle />
+
 				<Header />
 				<main className="h-screen pt-20 max-w-7xl ml-auto mr-auto pl-7 pr-7 ">
 					{children}
