@@ -5,6 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import DescriptionIcon from '@mui/icons-material/Description'
 import Tooltip from '@mui/material/Tooltip'
 import { Typewriter } from 'react-simple-typewriter'
+import Zoom from '@mui/material/Zoom'
 
 export const Hero = () => {
 	return (
@@ -27,36 +28,38 @@ export const Hero = () => {
 				</h3>
 				<div className="flex ">
 					<h1 className="font-extrabold text-[14.5rem] leading-[0.9] ">WEB</h1>
-					<div className="flex items-end">
+					<div className="flex items-end ">
 						<a
 							href="https://github.com/MaykonFelix"
 							target="_blank"
-							className="cursor-pointer duration-300 hover:text-rose-500"
+							className="cursor-pointer duration-300 hover:scale-[120%]"
 						>
-							<Tooltip title="GitHub">
-								<GitHubIcon
-									className="text-slate-700 duration-500 hover:text-slate-950 "
-									sx={{ fontSize: 70 }}
-								/>
+							<Tooltip
+								title="GitHub"
+								arrow
+								placement="top"
+								TransitionComponent={Zoom}
+							>
+								<GitHubIcon className="text-black hover:text-slate-900 text-[70px]" />
 							</Tooltip>
 						</a>
 						<a
 							href="https://www.linkedin.com/in/maykonfelixwebdeveloper/"
 							target="_blank"
-							className="cursor-pointer"
+							className="cursor-pointer duration-300 hover:scale-[120%]"
 						>
-							<Tooltip title="Linkedin">
+							<Tooltip
+								title="Linkedin"
+								arrow
+								placement="top"
+								TransitionComponent={Zoom}
+							>
 								<LinkedInIcon
-									className="text-blue-500 hover:text-blue-800"
+									className="text-blue-500 hover:text-blue-600"
 									sx={{ fontSize: 70 }}
 								/>
 							</Tooltip>
 						</a>
-						<div className="cursor-pointer">
-							<Tooltip title="Curriculo">
-								<DescriptionIcon sx={{ fontSize: 70 }} />
-							</Tooltip>
-						</div>
 					</div>
 				</div>
 				<div className="flex">
@@ -68,9 +71,8 @@ export const Hero = () => {
 					</h1>
 				</div>
 				<div className="flex self-end">
-					<p className="text-sm text-slate-500 font-medium tracking-widest leading-normal  max-w-sm">
-						Mais de 2 anos de experiencia em desenvolvimento web, atualmente com
-						34 anos trabalhando com desenvolvimento front end.
+					<p className="text-sm text-slate-500 font-medium tracking-wider leading-normal  max-w-sm">
+						Mais de 3 anos de experiencia em desenvolvimento web, atualmente trabalhando com NextJS, React e Tailwind.
 					</p>
 				</div>
 			</div>
