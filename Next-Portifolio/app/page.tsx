@@ -1,9 +1,9 @@
 'use client'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Dispatch, SetStateAction, useState } from 'react'
+import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import Image from 'next/image'
 
-import { Hero, ProgressBar } from './shared/components'
+import { Hero } from './shared/components'
 import ReactLogo from '@/shared/assets/pic/ReactLogo.png'
 import NodeLogo from '@/shared/assets/pic/NodeLogo.png'
 import TSLogo from '@/shared/assets/pic/TSLogo.png'
@@ -29,26 +29,29 @@ export const ButtonReact = ({ showReact, setShowReact }: ButtonReactProp) => {
 					}}
 					exit={{ opacity: 0, x: 0, y: 0, width: '0px', height: '0px' }}
 					transition={{ duration: 0.2 }}
-					className="absolute bg-slate-100 rounded-3xl shadow-[2px_10px_50px_#0ea5e970]"
+					className="absolute bg-slate-100 rounded-full shadow-[2px_10px_50px_#0ea5e970]"
 				>
-					<div className="flex flex-col  item-center shadow-inner rounded-3xl border w-full h-full border-sky-200/50 text-sky-400">
+					<div className="flex flex-col  item-center shadow-inner rounded-full border w-full h-full border-sky-200/50 text-sky-400">
 						<div className="flex justify-between mt-4">
-							<p className="ml-12 text-3xl font-bold text-center ">ReactJS</p>
+							<p className="ml-20 text-3xl font-bold text-center ">ReactJS</p>
 							<button
 								type="button"
-								className="mr-4 flex- rounded-md px-2 font-semibold duration-300 hover:bg-sky-400 hover:text-white "
+								className="mr-[40px] flex- rounded-md px-2 font-semibold duration-300 hover:bg-sky-400 hover:text-white "
+								onClick={() => setShowReact(false)}
 							>
 								X
 							</button>
 						</div>
-						<p className="text-sm border-b mt-2 mx-4"> Conhecimentos:</p>
-						<div className="flex justify-between my-2 mx-4 gap-2">
-							<p className="text-sky-400 text-xs w-30 whitespace-nowrap">React Hook's </p>
-							<ProgressBar bgcolor='bg-sky-500' completed={80} />
-						</div>
-						<div className="flex justify-between mx-4 gap-2">
-							<p className="text-sky-400 text-xs">Componentes </p>
-							<ProgressBar bgcolor='bg-sky-500' completed={80} />
+						<p className="text-sm border-b mt-2  font-semibold text-center">
+							{' '}
+							Conhecimentos:
+						</p>
+						<div className="flex justify-between mt-2 mx-8">
+							<p className="text-sky-400 text-xs text-center w-30">
+								Base solida com ReactJS, atraves de cursos e documentação e
+								experiencia profissional sobre props, estado, imutabilidade,
+								hook's, padrões, contexto e reducer...{' '}
+							</p>
 						</div>
 					</div>
 				</motion.div>
@@ -67,18 +70,19 @@ export default function Home() {
 				<p className="font-bold text-slate-500">Melhores Hablidade</p>
 				<div className="flex gap-2 mt-4 ">
 					<motion.div
-						onClick={() => setShowReact(!showReact)}
+						onClick={showReact ? undefined : () => setShowReact(true)}
 						className="
 						flex flex-col-reverse justify-center
 						items-center w-20 h-20 border rounded-xl
 						cursor-pointer text-sky-400
-						duration-300 hover:shadow-[2px_10px_50px_#0ea5e970]"
+						duration-300 shadow-[2px_5px_8px_#0ea5e970]
+						hover:bg-sky-50
+						hover:shadow-[2px_5px_1px_#0ea5e970]
+						"
 					>
 						<ButtonReact showReact={showReact} setShowReact={setShowReact} />
 
-						<p className="text-sm font-semibold -translate-y-3 drop-shadow-2xl">
-							ReactJS
-						</p>
+						<p className="text-sm font-semibold -translate-y-3">ReactJS</p>
 						<motion.div
 							initial={{ y: 10, scale: 1 }}
 							transition={{ duration: 0.2 }}
@@ -87,7 +91,7 @@ export default function Home() {
 									? { scale: 1.5, rotate: -180, y: -30, x: -12 }
 									: undefined
 							}
-							animate={showReact ? { scale: 2.5, x: -50, y: -280 } : undefined}
+							animate={showReact ? { scale: 2, x: -30, y: -260 } : undefined}
 							exit={{ y: 10, scale: 1 }}
 							className="flex flex-col items-center justify-center w-full h-full "
 						>
