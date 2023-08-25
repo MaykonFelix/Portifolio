@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import { Stage, Layer, Star } from 'react-konva'
+import { useState } from 'react'
 
 function generateShapes() {
-	return [...Array(10)].map((_, i) => ({
+	return [...Array(15)].map((_, i) => ({
 		id: i.toString(),
 		x: Math.random() * window.innerWidth,
 		y: Math.random() * window.innerHeight,
@@ -48,8 +48,8 @@ const MapKonva = () => {
 						numPoints={5}
 						innerRadius={20}
 						outerRadius={40}
-						fill="#89b717"
-						opacity={0.8}
+						fill="#5703e2"
+						opacity={0.6}
 						draggable
 						rotation={star.rotation}
 						shadowColor="black"
