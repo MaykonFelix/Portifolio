@@ -5,11 +5,9 @@ const MapKonva = dynamic(() => import('./Components/index'), {
 	ssr: false,
 })
 
-
-
 const konva = () => {
 	return (
-		<div className='border -translate-y-[80px]'>
+		<div className="border -translate-y-[78px] overflow-hidden">
 			<MapKonva />
 		</div>
 	)

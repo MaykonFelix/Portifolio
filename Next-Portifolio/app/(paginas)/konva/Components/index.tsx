@@ -15,7 +15,7 @@ const INITIAL_STATE = generateShapes()
 const MapKonva = () => {
 	const [stars, setStars] = useState(INITIAL_STATE)
 
-	const handleDragStart = (e:any) => {
+	const handleDragStart = (e: any) => {
 		const id = e.target.id()
 		setStars(
 			stars.map(star => {
@@ -26,7 +26,7 @@ const MapKonva = () => {
 			}),
 		)
 	}
-	const handleDragEnd = e => {
+	const handleDragEnd = (e: any) => {
 		setStars(
 			stars.map(star => {
 				return {
@@ -37,7 +37,7 @@ const MapKonva = () => {
 		)
 	}
 	return (
-		<Stage draggable width={window.innerWidth} height={window.innerHeight}>
+		<Stage width={window.innerWidth} height={window.innerHeight}>
 			<Layer>
 				{stars.map(star => (
 					<Star
