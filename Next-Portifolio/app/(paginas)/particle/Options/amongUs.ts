@@ -24,7 +24,7 @@ export const amongUs = {
 	delay: 0,
 	fullScreen: {
 		enable: true,
-		zIndex: 0,
+		zIndex: -1,
 	},
 	detectRetina: true,
 	duration: 0,
@@ -33,18 +33,18 @@ export const amongUs = {
 		detectsOn: 'window',
 		events: {
 			onClick: {
-				enable: true,
-				mode: 'push',
+				enable: false,
+				mode: [],
 			},
 			onDiv: {
-				selectors: {},
+				selectors: [],
 				enable: false,
-				mode: {},
+				mode: [],
 				type: 'circle',
 			},
 			onHover: {
 				enable: false,
-				mode: {},
+				mode: [],
 				parallax: {
 					enable: false,
 					force: 2,
@@ -77,6 +77,12 @@ export const amongUs = {
 				distance: 200,
 				duration: 0.4,
 				mix: false,
+				divs: {
+					distance: 200,
+					duration: 0.4,
+					mix: false,
+					selectors: [],
+				},
 			},
 			connect: {
 				distance: 80,
@@ -95,12 +101,7 @@ export const amongUs = {
 			},
 			push: {
 				default: true,
-				groups: {
-					0: 'z5000',
-					1: 'z7500',
-					2: 'z2500',
-					3: 'z1000',
-				},
+				groups: [],
 				quantity: 4,
 			},
 			remove: {
@@ -113,6 +114,15 @@ export const amongUs = {
 				speed: 1,
 				maxSpeed: 50,
 				easing: 'ease-out-quad',
+				divs: {
+					distance: 200,
+					duration: 0.4,
+					factor: 100,
+					speed: 1,
+					maxSpeed: 50,
+					easing: 'ease-out-quad',
+					selectors: [],
+				},
 			},
 			slow: {
 				factor: 3,
@@ -139,7 +149,7 @@ export const amongUs = {
 			},
 		},
 	},
-	manualParticles: {},
+	manualParticles: [],
 	particles: {
 		bounce: {
 			horizontal: {
@@ -192,7 +202,7 @@ export const amongUs = {
 					count: 0,
 					enable: false,
 					offset: 0,
-					speed: 1,
+					speed: 20,
 					delay: 0,
 					decay: 0,
 					sync: true,
@@ -260,8 +270,8 @@ export const amongUs = {
 				distance: 200,
 				enable: false,
 				rotate: {
-					x: 3000,
-					y: 3000,
+					x: 600,
+					y: 1200,
 				},
 			},
 			center: {
@@ -334,13 +344,14 @@ export const amongUs = {
 			animation: {
 				count: 0,
 				enable: false,
-				speed: 2,
+				speed: 3,
 				decay: 0,
 				delay: 0,
 				sync: false,
 				mode: 'auto',
 				startValue: 'random',
 				destroy: 'none',
+				minimumValue: 0.1,
 			},
 		},
 		reduceDuplicates: false,
@@ -356,7 +367,6 @@ export const amongUs = {
 			},
 		},
 		shape: {
-			loadShape: {},
 			close: true,
 			fill: true,
 			options: {},
@@ -416,6 +426,7 @@ export const amongUs = {
 					},
 				},
 				sizeOffset: true,
+				particles: {},
 			},
 		},
 		roll: {
@@ -523,13 +534,13 @@ export const amongUs = {
 		links: {
 			blink: false,
 			color: {
-				value: '#fff',
+				value: '#ffffff',
 			},
 			consent: false,
 			distance: 100,
 			enable: false,
 			frequency: 1,
-			opacity: 1,
+			opacity: 0.4,
 			shadow: {
 				blur: 5,
 				color: {
@@ -559,10 +570,10 @@ export const amongUs = {
 	},
 	pauseOnBlur: true,
 	pauseOnOutsideViewport: true,
-	responsive: {},
+	responsive: [],
 	smooth: false,
 	style: {},
-	themes: {},
+	themes: [],
 	zLayers: 100,
 	emitters: {
 		autoPlay: true,
