@@ -1,14 +1,26 @@
 'use client'
 
 import Particles from 'react-tsparticles'
+import { loadFull } from 'tsparticles'
 import { useCallback, useEffect, useState } from 'react'
-import { loadSlim } from 'tsparticles-slim'
 import type { Container, Engine } from 'tsparticles-engine'
-import amongUs from './Options/amongUs.json'
+import { amongUs } from './Options/amongUs'
 
 export default function particle() {
+	const [show, setShow] = useState<boolean>()
+
+	useEffect(() => {
+		let ignore = false
+		if (!ignore) {
+			setShow(true)
+		}
+		return () => {
+			ignore = true
+		}
+	}, [])
+
 	const particlesInit = useCallback(async (engine: Engine) => {
-		await loadSlim(engine)
+		await loadFull(engine)
 	}, [])
 
 	const particlesLoaded = useCallback(
@@ -18,28 +30,18 @@ export default function particle() {
 		[],
 	)
 
-const [option, setOption] =useState()
-useEffect(()=>{
-let ignore = false
-
-const AmongUs = JSON.parse(amongUs);
-if(!ignore){
-	setOption(AmongUs)
-}
-return 
-
-},[])
-
-
-
 	return (
 		<div className="bg-slate-500">
-			<Particles
-				id="tsparticles"
-				init={particlesInit}
-				loaded={particlesLoaded}
-				options={amongUs}
-			/>
+			{show && (
+				<Particles
+					id="tsparticles"
+					width="100vh"
+					height="100vw"
+					init={particlesInit}
+					loaded={particlesLoaded}
+					options={amongUs}
+				/>
+			)}
 		</div>
 	)
 }
