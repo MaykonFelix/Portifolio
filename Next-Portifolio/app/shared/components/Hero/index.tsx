@@ -2,7 +2,6 @@
 
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import DescriptionIcon from '@mui/icons-material/Description'
 import Tooltip from '@mui/material/Tooltip'
 import { Typewriter } from 'react-simple-typewriter'
 import Zoom from '@mui/material/Zoom'
@@ -27,7 +26,9 @@ export const Hero = () => {
 					/>
 				</h3>
 				<div className="flex ">
-					<h1 className="font-extrabold text-8xl sm:text-[9rem] md:text-[14.5rem] leading-[0.9] ">WEB</h1>
+					<h1 className="font-extrabold text-8xl sm:text-[9rem] md:text-[14.5rem] leading-[0.9] ">
+						WEB
+					</h1>
 					<div className="flex items-end ">
 						<a
 							href="https://github.com/MaykonFelix"
@@ -54,10 +55,7 @@ export const Hero = () => {
 								placement="top"
 								TransitionComponent={Zoom}
 							>
-								<LinkedInIcon
-									className="text-blue-500 hover:text-blue-600  text-[50px] sm:text-[70px] md:text-[100px]"
-
-								/>
+								<LinkedInIcon className="text-blue-500 hover:text-blue-600  text-[50px] sm:text-[70px] md:text-[100px]" />
 							</Tooltip>
 						</a>
 					</div>
@@ -72,7 +70,8 @@ export const Hero = () => {
 				</div>
 				<div className="flex self-end">
 					<p className="text-sm text-slate-500 font-medium tracking-wider leading-normal  max-w-sm">
-						Mais de 3 anos de experiencia em desenvolvimento web, atualmente trabalhando com NextJS, React e Tailwind.
+						Mais de 3 anos de experiencia em desenvolvimento web, atualmente
+						trabalhando com NextJS, React e Tailwind.
 					</p>
 				</div>
 			</div>
