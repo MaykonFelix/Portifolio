@@ -10,11 +10,6 @@
 		"path": "/framer"
 	},
 	{
-		"id": 2,
-		"name": "Particles",
-		"path": "/particle"
-	},
-	{
 		"id": 3,
 		"name": "Konva",
 		"path": "/konva"
