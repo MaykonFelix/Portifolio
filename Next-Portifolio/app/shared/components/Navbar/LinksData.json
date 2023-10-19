@@ -1,17 +1,17 @@
 [
-	{
-		"id": 0,
-		"name": "Home",
-		"path": "/"
-	},
-	{
-		"id": 1,
-		"name": "Framer",
-		"path": "/framer"
-	},
-	{
-		"id": 3,
-		"name": "Konva",
-		"path": "/konva"
-	}
+  {
+    "id": 0,
+    "name": "Home",
+    "path": "/"
+  },
+  {
+    "id": 1,
+    "name": "Framer",
+    "path": "/framer"
+  },
+  {
+    "id": 3,
+    "name": "Konva",
+    "path": "/konva"
+  }
 ]
