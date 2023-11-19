@@ -5,32 +5,32 @@ version: '3.2'
 ###############################################################################
 
 services:
-    frontend-events:
-        image: node:20.7.0
-        container_name: frontend-events
-        working_dir: /home/node/app
-        environment:
-            - NODE_ENV=production
-        volumes:
-            - /home/maykon/Documentos/Git Hub/events-poitaner/:/home/node/app
-        expose:
-            - '8085'
-        command: bash -c "yarn && yarn build && PORT=3005 yarn start-production"
-        #command: bash -c "rm -rf node_modules yarn.lock && yarn cache clean && yarn && yarn build && PORT=3005 yarn start-production"
-        restart: always
-        networks:
-            dev:
-                ipv4_address: 172.20.0.12
-        ports:
-            - 3005:3005
+  frontend-events:
+    image: node:20.7.0
+    container_name: frontend-events
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - /home/github/:/home/node/app
+    expose:
+      - '8085'
+    command: bash -c "yarn && yarn build && PORT=3005 yarn start-production"
+    #command: bash -c "rm -rf node_modules yarn.lock && yarn cache clean && yarn && yarn build && PORT=3005 yarn start-production"
+    restart: always
+    networks:
+      dev:
+        ipv4_address: 172.20.0.12
+    ports:
+      - 3005:3005
 
 volumes:
-    portainer_data:
+  portainer_data:
 
 networks:
-    dev:
-        driver: bridge
-        ipam:
-            driver: default
-            config:
-                - subnet: 172.20.0.0/24
+  dev:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/24
