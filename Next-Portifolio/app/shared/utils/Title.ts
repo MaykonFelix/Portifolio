@@ -1,5 +1,3 @@
-
-
 export const NewTitle = () => {
 	const NewTitle = document.title
 	window.addEventListener('blur', () => {

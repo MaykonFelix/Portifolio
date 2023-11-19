@@ -1,6 +1,6 @@
 'use client'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Dispatch, SetStateAction, useEffect, useState } from 'react'
+import { Dispatch, SetStateAction, useState } from 'react'
 import Image from 'next/image'
 
 import { Hero } from './shared/components'
@@ -10,85 +10,80 @@ import TSLogo from '@/shared/assets/pic/TSLogo.png'
 import MySQLLogo from '@/shared/assets/pic/MySQLogo.png'
 
 interface ButtonReactProp {
-    showReact: boolean
-    setShowReact: Dispatch<SetStateAction<boolean>>
+	showReact: boolean
+	setShowReact: Dispatch<SetStateAction<boolean>>
 }
 
-export const ButtonReact = ({ showReact, setShowReact }: ButtonReactProp) => {
-    return (
-        <AnimatePresence>
-            {showReact && (
-                <motion.div
-                    initial={{
-                        opacity: 0,
-                        x: 0,
-                        y: 0,
-                        width: '0px',
-                        height: '0px',
-                    }}
-                    animate={{
-                        opacity: 1,
-                        x: 90,
-                        y: -200,
-                        width: '300px',
-                        height: '200px',
-                    }}
-                    exit={{
-                        opacity: 0,
-                        x: 0,
-                        y: 0,
-                        width: '0px',
-                        height: '0px',
-                    }}
-                    transition={{ duration: 0.2 }}
-                    className="absolute bg-slate-100 rounded-full shadow-[2px_10px_50px_#0ea5e970]"
-                >
-                    <div className="flex flex-col  item-center shadow-inner rounded-full border w-full h-full border-sky-200/50 text-sky-400">
-                        <div className="flex justify-between mt-4">
-                            <p className="ml-20 text-3xl font-bold text-center ">
-                                ReactJS
-                            </p>
-                            <button
-                                type="button"
-                                className="mr-[40px] flex- rounded-md px-2 font-semibold duration-300 hover:bg-sky-400 hover:text-white "
-                                onClick={() => setShowReact(false)}
-                            >
-                                X
-                            </button>
-                        </div>
-                        <p className="text-sm border-b mt-2  font-semibold text-center">
-                            {' '}
-                            Conhecimentos:
-                        </p>
-                        <div className="flex justify-between mt-2 mx-8">
-                            <p className="text-sky-400 text-xs text-center w-30">
-                                Base solida com ReactJS, atraves de cursos e
-                                documentação e experiencia profissional sobre
-                                props, estado, imutabilidade, hook's, padrões,
-                                contexto e reducer...{' '}
-                            </p>
-                        </div>
-                    </div>
-                </motion.div>
-            )}
-        </AnimatePresence>
-    )
+const ButtonReact = ({ showReact, setShowReact }: ButtonReactProp) => {
+	return (
+		<AnimatePresence>
+			{showReact && (
+				<motion.div
+					initial={{
+						opacity: 0,
+						x: 0,
+						y: 0,
+						width: '0px',
+						height: '0px',
+					}}
+					animate={{
+						opacity: 1,
+						x: 90,
+						y: -200,
+						width: '300px',
+						height: '200px',
+					}}
+					exit={{
+						opacity: 0,
+						x: 0,
+						y: 0,
+						width: '0px',
+						height: '0px',
+					}}
+					transition={{ duration: 0.2 }}
+					className="absolute bg-slate-100 rounded-full shadow-[2px_10px_50px_#0ea5e970]"
+				>
+					<div className="flex flex-col  item-center shadow-inner rounded-full border w-full h-full border-sky-200/50 text-sky-400">
+						<div className="flex justify-between mt-4">
+							<p className="ml-20 text-3xl font-bold text-center ">ReactJS</p>
+							<button
+								type="button"
+								className="mr-[40px] flex- rounded-md px-2 font-semibold duration-300 hover:bg-sky-400 hover:text-white "
+								onClick={() => setShowReact(false)}
+							>
+								X
+							</button>
+						</div>
+						<p className="text-sm border-b mt-2  font-semibold text-center">
+							{' '}
+							Conhecimentos:
+						</p>
+						<div className="flex justify-between mt-2 mx-8">
+							<p className="text-sky-400 text-xs text-center w-30">
+								Base solida com ReactJS, atraves de cursos e documentação e
+								experiencia profissional sobre props, estado, imutabilidade,
+								hook&apos;s, padrões, contexto e reducer...{' '}
+							</p>
+						</div>
+					</div>
+				</motion.div>
+			)}
+		</AnimatePresence>
+	)
 }
 
 export default function Home() {
-    const [showReact, setShowReact] = useState<boolean>(false)
+	const [showReact, setShowReact] = useState<boolean>(false)
 
-    return (
-        <>
-            <Hero />
-            <div className="w-full flex flex-col justify-center items-center mt-20 select-none">
-                <p className="font-bold text-slate-500">Melhores Hablidade</p>
-                <div className="flex gap-2 mt-4 ">
-                    <motion.div
-                        onClick={
-                            showReact ? undefined : () => setShowReact(true)
-                        }
-                        className="
+	return (
+		<>
+			<Hero />
+			<div className="w-full flex flex-col justify-center items-center mt-20 select-none">
+				<p className="font-bold text-slate-500">Melhores Hablidade</p>
+				<div className="flex gap-2 mt-4 ">
+					<motion.div
+						onClick={showReact ? undefined : () => setShowReact(true)}
+						className="
 						flex flex-col-reverse justify-center
 						items-center w-20 h-20 border rounded-xl
 						cursor-pointer text-sky-400
@@ -96,54 +91,45 @@ export default function Home() {
 						hover:bg-sky-50
 						hover:shadow-[2px_5px_1px_#0ea5e970]
 						"
-                    >
-                        <ButtonReact
-                            showReact={showReact}
-                            setShowReact={setShowReact}
-                        />
+					>
+						<ButtonReact showReact={showReact} setShowReact={setShowReact} />
 
-                        <p className="text-sm font-semibold -translate-y-3">
-                            ReactJS
-                        </p>
-                        <motion.div
-                            initial={{ y: 10, scale: 1 }}
-                            transition={{ duration: 0.2 }}
-                            whileHover={
-                                !showReact
-                                    ? {
-                                          scale: 1.5,
-                                          rotate: -180,
-                                          y: -30,
-                                          x: -12,
-                                      }
-                                    : undefined
-                            }
-                            animate={
-                                showReact
-                                    ? { scale: 2, x: -30, y: -260 }
-                                    : undefined
-                            }
-                            exit={{ y: 10, scale: 1 }}
-                            className="flex flex-col items-center justify-center w-full h-full "
-                        >
-                            <Image
-                                src={ReactLogo}
-                                alt="React Logo"
-                                className="m-4 p-4 select-none"
-                            />
-                        </motion.div>
-                    </motion.div>
-                    <div className="flex justify-center items-center w-20 h-20 p-4  border rounded-xl ">
-                        <Image src={NodeLogo} alt="React Logo" />
-                    </div>
-                    <div className="flex justify-center items-center w-20 h-20 p-4  border rounded-xl ">
-                        <Image src={TSLogo} alt="React Logo" />
-                    </div>
-                    <div className="flex justify-center items-center w-20 h-20 p-4  border rounded-xl ">
-                        <Image src={MySQLLogo} alt="React Logo" />
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+						<p className="text-sm font-semibold -translate-y-3">ReactJS</p>
+						<motion.div
+							initial={{ y: 10, scale: 1 }}
+							transition={{ duration: 0.2 }}
+							whileHover={
+								!showReact
+									? {
+										scale: 1.5,
+										rotate: -180,
+										y: -30,
+										x: -12,
+									  }
+									: undefined
+							}
+							animate={showReact ? { scale: 2, x: -30, y: -260 } : undefined}
+							exit={{ y: 10, scale: 1 }}
+							className="flex flex-col items-center justify-center w-full h-full "
+						>
+							<Image
+								src={ReactLogo}
+								alt="React Logo"
+								className="m-4 p-4 select-none"
+							/>
+						</motion.div>
+					</motion.div>
+					<div className="flex justify-center items-center w-20 h-20 p-4  border rounded-xl ">
+						<Image src={NodeLogo} alt="React Logo" />
+					</div>
+					<div className="flex justify-center items-center w-20 h-20 p-4  border rounded-xl ">
+						<Image src={TSLogo} alt="React Logo" />
+					</div>
+					<div className="flex justify-center items-center w-20 h-20 p-4  border rounded-xl ">
+						<Image src={MySQLLogo} alt="React Logo" />
+					</div>
+				</div>
+			</div>
+		</>
+	)
 }
