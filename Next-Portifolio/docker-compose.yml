@@ -6,13 +6,13 @@ version: '3.2'
 
 services:
   frontend-events:
-    image: node:20.7.0
-    container_name: frontend-events
+    image: node:20.9.0
+    container_name: portifolio
     working_dir: /home/node/app
     environment:
       - NODE_ENV=production
     volumes:
-      - /home/github/:/home/node/app
+      - /home/maykon/github/Portifolio/Next-Portifolio:/home/node/app
     expose:
       - '8085'
     command: bash -c "yarn && yarn build && PORT=3005 yarn start-production"
