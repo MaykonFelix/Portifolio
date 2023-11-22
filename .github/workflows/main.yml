@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: 📂 Sync files
         uses: Penguibird/FTP-Deploy-Action@4.2.0
@@ -22,3 +22,7 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
+
+      - name: 📂 Sync files
+        run: |
+            docker compose up -d
