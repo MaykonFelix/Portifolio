@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - main
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: 📂 Sync files
+        uses: Penguibird/FTP-Deploy-Action@4.2.0
+        with:
+          server: ${{ secrets.ftp_host }}
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          local-dir: Next-Portifolio/*
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
