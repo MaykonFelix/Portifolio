@@ -8,16 +8,16 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v3
-
-      - name: 📂 Sync files
-        uses: Penguibird/FTP-Deploy-Action@4.2.0
+      - name: Checkout
+        uses: actions/checkout@main
+      - name: down
+        uses: MitchWind/ftp-deploy@master
         with:
           server: ${{ secrets.ftp_host }}
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           local-dir: Next-Portifolio/
+          server-dir: /home/github/Portifolio
           exclude: |
             **/.git*
             **/.git*/**
