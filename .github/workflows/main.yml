@@ -21,6 +21,7 @@ jobs:
           password: ${{ secrets.ftp_password }}
           local-dir: ./Next-Portifolio/
           ftpAction: Copy
+          port: 22
 
 
 
