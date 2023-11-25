@@ -1,27 +1,16 @@
-# Workflow name
-name: 🚀 Deploy website on push
-
-on:
-  push:
-    branches: [main]
+name: Deploy via ftp
+on: push
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.3.4
-
-      - name: FTP Interact
-        uses: priradev/ftp-interactions@v0.2.9-beta
-
-        with:
-          host: ${{ secrets.ftp_host }}
-          username: ${{ secrets.ftp_username }}
-          password: ${{ secrets.ftp_password }}
-          local-dir: ./Next-Portifolio/
-          ftpAction: Copy
-          port: 22
-
-
-
+    - uses: actions/checkout@v2
+    - name: Upload ftp
+      uses: sebastianpopp/ftp-action@releases/v2
+      with:
+        host: ${{ secrets.FTP_SERVER }}
+        user: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        localDir: "Next-Portifolio"
+        remoteDir: "/home/maykon/github"
