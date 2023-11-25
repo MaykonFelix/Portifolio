@@ -9,8 +9,8 @@ jobs:
     - name: Upload ftp
       uses: sebastianpopp/ftp-action@releases/v2
       with:
-        host: ${{ secrets.FTP_SERVER }}
-        user: ${{ secrets.FTP_USERNAME }}
+        host: maykon.xyz
+        user: root
         password: ${{ secrets.FTP_PASSWORD }}
-        localDir: "Next-Portifolio"
+        localDir: "Next-Portifolio/"
         remoteDir: "/home/maykon/github"
