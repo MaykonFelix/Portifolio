@@ -16,9 +16,9 @@ jobs:
         uses: priradev/ftp-interactions@v0.2.9-beta
 
         with:
-          host: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          host: ${{ secrets.ftp_host }}
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
           local-dir: Next-Portifolio/
           ftpAction: Copy
 
