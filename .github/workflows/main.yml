@@ -13,9 +13,9 @@ jobs:
       - name: FTP Interact
         uses: priradev/ftp-interactions@v0.2.9-beta
         with:
-          host: ${{ secrets.ftp_host }}
-          username: ${{ secrets.ftp_username }}
-          password: ${{ secrets.ftp_password }}
+          host: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           ftpAction: Copy
           local-dir: Next-Portifolio/
           port: 22
