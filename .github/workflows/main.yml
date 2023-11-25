@@ -1,15 +1,16 @@
-name: Deploy via ftp
 on: push
+name: 🚀 Deploy website on push
 jobs:
-  deploy:
-    name: Deploy
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Upload ftp
-      uses: sebastianpopp/ftp-action@releases/v2
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        host: maykon.xyz
-        user: root
+        server: maykon.xyz
+        username: root
         password: ${{ secrets.ftp_password }}
-        localDir: "Next-Portifolio"
