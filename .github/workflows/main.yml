@@ -10,19 +10,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@main
-      - name: down
-        uses: MitchWind/ftp-deploy@master
+      - name: FTP Interact
+        uses: priradev/ftp-interactions@v0.2.9-beta
         with:
-          server: ${{ secrets.ftp_host }}
+          host: ${{ secrets.ftp_host }}
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
+          ftpAction: Copy
           local-dir: Next-Portifolio/
+          port: 22
           server-dir: /home/github/Portifolio
           exclude: |
             **/.git*
             **/.git*/**
             **/node_modules/**
 
-      - name: 📂 Sync files
-        run: |
-            docker compose up -d
