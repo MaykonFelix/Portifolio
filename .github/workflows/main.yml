@@ -1,27 +1,26 @@
+# Workflow name
+name: 🚀 Deploy website on push
+
 on:
   push:
-    branches:
-      - main
-name: 🚀 Deploy website on push
+    branches: [main]
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v2.3.4
+
       - name: FTP Interact
         uses: priradev/ftp-interactions@v0.2.9-beta
+
         with:
           host: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          ftpAction: Copy
           local-dir: Next-Portifolio/
-          port: 22
-          server-dir: /home/github/Portifolio
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
+          ftpAction: Copy
+
+
 
