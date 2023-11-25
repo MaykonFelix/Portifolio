@@ -14,4 +14,4 @@ jobs:
         server: maykon.xyz
         username: root
         password: ${{ secrets.ftp_password }}
-        ssh-port: 22
+        port: 22
