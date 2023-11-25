@@ -1,17 +1,25 @@
-on: push
-name: 🚀 Deploy website on push
-jobs:
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v3
+on: [push]
 
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: 104.251.212.155
-        username: root
-        password: ${{ secrets.ftp_password }}
-        port: 22
+jobs:
+  deploy_job:
+    runs-on: ubuntu-latest
+    name: build&deploy
+    steps:
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: yarn
+      - name: Build
+        run: yarn build
+
+      - name: deploy file to server
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        with:
+          username: 'root'
+          server: 'maykon.xyz'
+          ssh_password: ${{ secrets.ftp_password }}
+          local_path: './Next-Portifolio/*'
+          remote_path: '/var/www/react-app'
+          args: '-o ConnectTimeout=5'
