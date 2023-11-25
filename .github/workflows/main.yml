@@ -11,6 +11,5 @@ jobs:
       with:
         host: maykon.xyz
         user: root
-        password: ${{ secrets.FTP_PASSWORD }}
-        localDir: "Next-Portifolio/"
-        remoteDir: "/home/maykon/github"
+        password: ${{ secrets.ftp_password }}
+        localDir: "Next-Portifolio"
