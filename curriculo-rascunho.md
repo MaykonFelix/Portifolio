@@ -95,7 +95,7 @@ Adobe Photoshop · Illustrator · After Effects · Premiere · CorelDraw · Figm
 | Idioma     | Nível                   |
 |------------|-------------------------|
 | Português  | Nativo                  |
-| Inglês     | Pré-Intermediário (B1)  |
+| Inglês     | Intermediário (B1)      |
 | Italiano   | Iniciante (A1)          |
 
 ---
