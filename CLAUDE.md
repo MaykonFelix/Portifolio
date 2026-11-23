@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Personal portfolio website for Maykon Felix, deployed at https://maykon.vercel.app/. Built with React + TypeScript + Vite.
+Personal portfolio website for Maykon Felix, deployed at https://maykon.vercel.app/. Single page based on the "Portfolio-Agente" design (Claude Design canvas): dark/light themes, PT/EN/ES, and a simulated RAG agent that answers questions about the résumé.
 
 ## Commands
 
@@ -12,41 +12,33 @@ All commands run from the `Portifolio/` subdirectory:
 
 ```bash
 cd Portifolio
-npm run dev        # Start development server (Vite)
-npm run build      # Type-check + production build (tsc && vite build)
-npm run preview    # Preview production build locally
+npm run dev        # Next.js dev server (Turbopack)
+npm run build      # Production build (type-checks)
+npm run start      # Serve the production build
+npm run lint       # ESLint
 ```
 
-There are no test or lint scripts configured.
+There are no tests configured.
+
+## Stack
+
+Next.js 16 (App Router, `cacheComponents` on), React 19, TypeScript, Tailwind CSS v4, shadcn/ui (style `base-nova`, built on Base UI — not Radix), lucide-react, next-themes.
+
+Next 16 differs from older versions: read `Portifolio/node_modules/next/dist/docs/` before using unfamiliar APIs (see `Portifolio/AGENTS.md`).
 
 ## Architecture
 
-**Stack:** React 18, TypeScript, Vite, Material-UI (MUI), Framer Motion, React Router v6.
+- `src/app/layout.tsx` — fonts (Inter, Space Grotesk, JetBrains Mono via `next/font`), metadata, `ThemeProvider` + `I18nProvider`.
+- `src/app/page.tsx` — composes `ScrollProgress`, `SiteHeader` and the sections.
+- `src/components/sections.tsx` — Hero, Pipeline, Stack, Career, Projects, Contact.
+- `src/components/agent-chat.tsx` — the agent card (pipeline steps + streamed answer). Remounted with `key={lang}`.
+- `src/components/project-card.tsx` — project card + shadcn `Dialog` with details.
+- `src/components/i18n-provider.tsx` — language store (`useSyncExternalStore`, `localStorage` key `mf-lang`, falls back to `navigator.language`).
+- `src/lib/content.ts` — **all copy** in PT/EN/ES (`Dict` type is inferred from `pt`; `en`/`es` must match it).
+- `src/components/ui/` — shadcn components (add more with `npx shadcn@latest add <name>`).
 
-**Source root:** `Portifolio/src/`
+## Styling
 
-**Routing** (`src/routes/index.tsx`) — all routes are wrapped in a `Layout` component that injects `Header`, `FooterNew`, and `WhatsApp` around an `Outlet`:
-- `/` → Home
-- `/particle` → Particle effects showcase
-- `/playground` → Interactive playground
-- `/framerMotion` → Framer Motion animation demos
+Design tokens live in `src/app/globals.css`: light values on `:root`, dark on `.dark` (dark is the default theme; next-themes stores it as `mf-theme`). Custom Tailwind colors: `bg2`, `inset`, `chip`, `bubble`, `line`/`line2`/`line3`, `head`, `soft`, `dim`, `dot`, `hdr`, `brand` (`#C8F169`), `brand-text` (darker green in light mode for contrast), `brand-ink`. shadcn tokens (`primary`, `card`, `border`, …) are mapped onto them.
 
-**Layout** (`src/shared/layout/Layout.tsx`) — wraps every page with `AnimatePresence` for page transitions; uses `NewTitle` to change the browser tab title on window blur/focus.
-
-**Shared components** (`src/shared/components/`) — exported via `index.ts`. Key ones:
-- `Hero`, `Header`, `FooterNew` — page chrome
-- `Particle` — tsparticles background
-- `Konva` — canvas-based drawing (react-konva)
-- `Portfolio`, `Resume`, `Features` — main content sections
-
-**Theming** (`src/shared/themes/`) — Light and Dark MUI themes in `Light.ts` / `Dark.ts`.
-
-**Path alias:** `src/*` resolves to `src/*` (configured in both `vite.config.ts` and `tsconfig.json`).
-
-**Styling:** Global CSS variables and utilities are in `src/styles/global.css`. Brand colors: Blue Sky `#025b93`, Pink `#ff014f`. MUI + Emotion used for component-level styling.
-
-**Notable libraries:**
-- `framer-motion` — page and element animations
-- `tsparticles` / `react-tsparticles` — animated particle backgrounds
-- `react-konva` / `konva` — canvas-based interactive graphics
-- `react-simple-typewriter` — typewriter text effects
+Images are in `public/images/`.

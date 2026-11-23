@@ -1,0 +1,172 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-space-grotesk), var(--font-inter), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+
+  /* Tokens do design "Portfolio-Agente" */
+  --color-bg2: var(--bg2);
+  --color-inset: var(--inset);
+  --color-chip: var(--chip);
+  --color-bubble: var(--bubble);
+  --color-line: var(--line);
+  --color-line2: var(--line2);
+  --color-line3: var(--line3);
+  --color-head: var(--head);
+  --color-soft: var(--soft);
+  --color-dim: var(--dim);
+  --color-dot: var(--dot);
+  --color-hdr: var(--hdr);
+  --color-brand: var(--brand);
+  --color-brand-text: var(--brand-text);
+  --color-brand-ink: #0c0d10;
+  --color-live: #7cc242;
+  --shadow-agent: var(--agent-shadow);
+
+  --animate-blink: blink 1s step-end infinite;
+  --animate-live: live 2s ease-out infinite;
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  @keyframes blink {
+    0%,
+    49% {
+      opacity: 1;
+    }
+    50%,
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes live {
+    0% {
+      box-shadow: 0 0 0 0 rgb(200 241 105 / 0.55);
+    }
+    70% {
+      box-shadow: 0 0 0 8px rgb(200 241 105 / 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgb(200 241 105 / 0);
+    }
+  }
+}
+
+/* Tema claro */
+:root {
+  --brand: #c8f169;
+  --brand-text: #4d7c0f;
+
+  --bg2: #f1f2ee;
+  --inset: #f6f7f3;
+  --chip: #edefe9;
+  --bubble: #e9ebe5;
+  --line: #e3e5df;
+  --line2: #daddd6;
+  --line3: #c5c9c1;
+  --head: #0e0f12;
+  --soft: #3a3e46;
+  --dim: #62676f;
+  --dot: #d8dbd3;
+  --hdr: rgb(250 250 247 / 0.86);
+  --agent-shadow: 0 24px 48px rgb(20 22 26 / 0.1);
+
+  --background: #fafaf7;
+  --foreground: #1a1c20;
+  --card: #ffffff;
+  --card-foreground: #1a1c20;
+  --popover: #ffffff;
+  --popover-foreground: #1a1c20;
+  --primary: var(--brand);
+  --primary-foreground: #0c0d10;
+  --secondary: var(--chip);
+  --secondary-foreground: #1a1c20;
+  --muted: var(--chip);
+  --muted-foreground: #545961;
+  --accent: var(--chip);
+  --accent-foreground: #1a1c20;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: var(--line2);
+  --input: var(--line3);
+  --ring: var(--brand-text);
+  --radius: 0.625rem;
+}
+
+/* Tema escuro (padrão) */
+.dark {
+  --brand-text: #c8f169;
+
+  --bg2: #101116;
+  --inset: #0f1014;
+  --chip: #1c1f26;
+  --bubble: #22252d;
+  --line: #1f222a;
+  --line2: #262a33;
+  --line3: #3a3e48;
+  --head: #f5f5f0;
+  --soft: #c9ccd2;
+  --dim: #8a8f99;
+  --dot: #23262e;
+  --hdr: rgb(12 13 16 / 0.82);
+  --agent-shadow: 0 30px 60px rgb(0 0 0 / 0.45);
+
+  --background: #0c0d10;
+  --foreground: #ececE6;
+  --card: #13151a;
+  --card-foreground: #ececE6;
+  --popover: #13151a;
+  --popover-foreground: #ececE6;
+  --secondary-foreground: #ececE6;
+  --muted-foreground: #a3a7b0;
+  --accent-foreground: #ececE6;
+  --destructive: oklch(0.704 0.191 22.216);
+  --ring: var(--brand);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply scroll-smooth font-sans motion-reduce:scroll-auto;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  section[id] {
+    scroll-margin-top: 4.5rem;
+  }
+}
