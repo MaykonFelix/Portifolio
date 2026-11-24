@@ -417,13 +417,14 @@ export function Stack() {
         {
             title: t.sAI,
             brand: true,
-            items: ["LLM", "RAG", "Agents", t.tagGraphs, t.tagAuto],
+            items: ["LLM", "RAG", "Agents", "LangChain", "LangGraph", t.tagGraphs, t.tagAuto],
         },
         {
             title: t.sFront,
             items: [
                 "Next.js",
                 "React.js",
+                "TypeScript",
                 "Tailwind",
                 "Figma",
                 "Kotlin",
@@ -442,9 +443,11 @@ export function Stack() {
                 ".NET",
                 "PHP",
                 "SQL",
+                "PostgreSQL",
                 "Redis",
                 "RabbitMQ",
                 "APIs REST",
+                "GraphQL",
             ],
         },
         {
@@ -478,6 +481,7 @@ export function Stack() {
                 "Jira",
                 "ServiceNow",
                 "OutSystems",
+                "Mendix",
                 t.tagArch,
             ],
         },
@@ -581,7 +585,7 @@ export function Career() {
             date: t.j1date,
             role: t.j1role,
             company: "Tata Consultancy Services · Londrina, PR",
-            bullets: [t.j1b1, t.j1b2, t.j1b3, t.j1b4],
+            bullets: [t.j1m1, t.j1m2, t.j1b1, t.j1b2, t.j1b3, t.j1b4],
             current: true,
         },
         {
@@ -594,7 +598,7 @@ export function Career() {
             date: t.j3date,
             role: t.j3role,
             company: "Origini Italiane SAS · Londrina, PR",
-            bullets: [t.j3b1, t.j3b2, t.j3b3],
+            bullets: [t.j3m1, t.j3b1, t.j3b2, t.j3b3],
         },
         {
             date: t.j4date,
@@ -617,7 +621,10 @@ export function Career() {
     ];
     const certs = [
         "Associate Developer (OutSystems O11)",
+        "Associate Developer (OutSystems ODC)",
+        "Mendix Rapid Developer",
         t.c2,
+        t.c6,
         t.c3,
         "React Hooks",
         t.c5,
